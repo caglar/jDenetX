@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d6f80956-7349-4d26-ae6a-1ee0f7f52ee6" name="Default" comment="" />
-    <ignored path="FASC.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="FASC.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" line="195" class="moa.classifiers.ActiveClusterBaggingASHT" package="moa.classifiers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -52,7 +67,24 @@
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules />
-    <ui_properties />
+    <ui_properties>
+      <property name="line_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
+    </ui_properties>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="FASC" />
@@ -60,91 +92,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EvaluateActiveLearningModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="308" column="67" selection-start="14250" selection-end="14250" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntOption.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/options/IntOption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="11" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoOzaBagASHT.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/CoOzaBagASHT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="81" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="4" selection-start="9441" selection-end="9441" vertical-scroll-proportion="-268.5">
+            <state line="109" column="10" selection-start="3878" selection-end="3878" vertical-scroll-proportion="-0.9561753">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstancesHistMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/core/InstancesHistMap.java">
+      <file leaf-file-name="LearnClusterBaggingModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/tasks/LearnClusterBaggingModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="51" column="142" selection-start="2092" selection-end="2092" vertical-scroll-proportion="-95.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstanceClassesClusterPool.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/moa/core/InstanceClassesClusterPool.java">
+      <file leaf-file-name="AbstractClassifier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="61" selection-start="368" selection-end="368" vertical-scroll-proportion="-0.25493172">
+            <state line="267" column="72" selection-start="9563" selection-end="9563" vertical-scroll-proportion="-155.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstancesHists.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/core/InstancesHists.java">
+      <file leaf-file-name="ClusterTrainingDataHarvester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActiveClusterBagging.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="51" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MiscUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/core/MiscUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="150" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OzaBag.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="30" selection-start="1130" selection-end="3613" vertical-scroll-proportion="-6.0">
+            <state line="126" column="70" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,16 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveLearnBaggingASHT.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/CoOzaBagASHT.java" />
-        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java" />
         <option value="$PROJECT_DIR$/src/moa/core/InstancesHists.java" />
         <option value="$PROJECT_DIR$/src/moa/core/InstancesHistogram.java" />
         <option value="$PROJECT_DIR$/src/moa/core/InstanceClustersClassPool.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/InstancesClassesPool.java" />
         <option value="$PROJECT_DIR$/src/moa/core/InstanceClassesClusterPool.java" />
+        <option value="$PROJECT_DIR$/src/weka/core/NormalizableDistance.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/MiscUtils.java" />
+        <option value="$PROJECT_DIR$/src/moa/AbstractMOAObject.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/InstanceClassesPool.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/VotedInstancePool.java" />
+        <option value="$PROJECT_DIR$/src/moa/tasks/LearnClusterBaggingModel.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
+        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
       </list>
     </option>
   </component>
@@ -211,6 +195,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,60 +273,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classifiers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -351,9 +292,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.TaskLauncher">
     <configuration default="false" name="TestInstancesHists" type="Application" factoryName="Application" temporary="true">
@@ -437,7 +378,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="FASC" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60534" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -579,25 +526,25 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="24" width="1440" height="852" extended-state="1" />
+    <frame x="1440" y="24" width="1440" height="850" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24909486" sideWeight="0.75" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24011299" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20709631" sideWeight="0.75354105" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23654391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -637,94 +584,100 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/moa/streams/CotrainInstanceStream.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/core/AbstractInstance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="324" selection-end="324" vertical-scroll-proportion="0.10958904" />
+        <state line="353" column="62" selection-start="10848" selection-end="10848" vertical-scroll-proportion="0.34710744" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cglr/fsdc/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/VotedInstancePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="34" selection-start="3536" selection-end="3536" vertical-scroll-proportion="0.59850377" />
+        <state line="61" column="61" selection-start="1728" selection-end="1728" vertical-scroll-proportion="1.3884298" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/options/OptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.60143197" />
+        <state line="25" column="17" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.12448133" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/Copyable.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/gui/AWTRenderable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="9" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.54415274" />
+        <state line="21" column="17" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0746888" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/Instance.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/MOAObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="334" column="64" selection-start="11095" selection-end="11099" vertical-scroll-proportion="0.33248731" />
+        <state line="23" column="17" selection-start="948" selection-end="948" vertical-scroll-proportion="0.12448133" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/TimingUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/Classifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0746888" />
+        <state line="28" column="38" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.12448133" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/InstanceClassesPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="67" selection-start="14250" selection-end="14250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="106" column="19" selection-start="3106" selection-end="3106" vertical-scroll-proportion="0.33195022" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/options/IntOption.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="126" column="70" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/CoOzaBagASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="81" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/InstancesHistMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+        <state line="226" column="39" selection-start="9474" selection-end="9474" vertical-scroll-proportion="0.4037267">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/InstancesHists.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" />
+        <state line="124" column="15" selection-start="5226" selection-end="5226" vertical-scroll-proportion="0.29257643">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/clusterers/XMeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" />
+        <state line="2338" column="0" selection-start="69246" selection-end="69246" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/MiscUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/filters/unsupervised/attribute/Remove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="150" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0" />
+        <state line="198" column="0" selection-start="5562" selection-end="5562" vertical-scroll-proportion="0.024844721">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBag.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/tasks/LearnClusterBaggingModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="30" selection-start="1130" selection-end="3613" vertical-scroll-proportion="-6.0">
+        <state line="51" column="142" selection-start="2092" selection-end="2092" vertical-scroll-proportion="-95.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/core/DenseInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="308" column="0" selection-start="9917" selection-end="9917" vertical-scroll-proportion="0.023904383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="72" selection-start="9563" selection-end="9563" vertical-scroll-proportion="-155.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="4" selection-start="9441" selection-end="9441" vertical-scroll-proportion="-268.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/InstanceClassesClusterPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="61" selection-start="368" selection-end="368" vertical-scroll-proportion="-0.25493172">
+        <state line="109" column="10" selection-start="3878" selection-end="3878" vertical-scroll-proportion="-0.9561753">
           <folding />
         </state>
       </provider>
