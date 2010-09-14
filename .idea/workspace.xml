@@ -95,7 +95,7 @@
       <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="10" selection-start="3878" selection-end="3878" vertical-scroll-proportion="-0.9561753">
+            <state line="203" column="0" selection-start="8421" selection-end="8421" vertical-scroll-proportion="0.119521916">
               <folding />
             </state>
           </provider>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/moa/core/InstanceClassesPool.java" />
         <option value="$PROJECT_DIR$/src/moa/core/VotedInstancePool.java" />
         <option value="$PROJECT_DIR$/src/moa/tasks/LearnClusterBaggingModel.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
         <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
       </list>
     </option>
   </component>
@@ -677,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="10" selection-start="3878" selection-end="3878" vertical-scroll-proportion="-0.9561753">
+        <state line="203" column="0" selection-start="8421" selection-end="8421" vertical-scroll-proportion="0.119521916">
           <folding />
         </state>
       </provider>
