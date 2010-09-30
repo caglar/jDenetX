@@ -104,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="12" selection-start="5137" selection-end="5144" vertical-scroll-proportion="0.49885058">
+            <state line="136" column="8" selection-start="5069" selection-end="5069" vertical-scroll-proportion="83.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterTrainingDataHarvester.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClusterTrainingDataHarvester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="65" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-96.5">
+            <state line="32" column="70" selection-start="932" selection-end="1003" vertical-scroll-proportion="0.57608694">
               <folding />
             </state>
           </provider>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBoostASHOT.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBoost.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
         <option value="$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
       </list>
     </option>
   </component>
@@ -686,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="65" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-96.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="42" selection-start="981" selection-end="981" vertical-scroll-proportion="-42.0">
@@ -723,7 +716,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="12" selection-start="5137" selection-end="5144" vertical-scroll-proportion="0.49885058">
+        <state line="136" column="8" selection-start="5069" selection-end="5069" vertical-scroll-proportion="83.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="70" selection-start="932" selection-end="1003" vertical-scroll-proportion="0.57608694">
           <folding />
         </state>
       </provider>
