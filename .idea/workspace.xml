@@ -77,13 +77,65 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UDPFileStream.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/moa/streams/UDPFileStream.java">
+      <file leaf-file-name="OzaBoost.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBoost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="738" selection-end="738" vertical-scroll-proportion="-4.2096477">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="101" column="28" selection-start="3702" selection-end="3702" vertical-scroll-proportion="-456.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelfOzaBoost.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="120" selection-start="3919" selection-end="3919" vertical-scroll-proportion="-146.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASHoeffdingOptionTree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingOptionTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="46" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-6.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="12" selection-start="5137" selection-end="5144" vertical-scroll-proportion="0.49885058">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterTrainingDataHarvester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="65" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-96.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveClusterBagging.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="42" selection-start="981" selection-end="981" vertical-scroll-proportion="-42.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractClassifier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-168.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,22 +150,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/moa/core/VotedInstancePool.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/HoeffdingOptionTreeNBAdaptive.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java" />
-        <option value="$PROJECT_DIR$/src/moa/core/NullObjectRepository.java" />
-        <option value="$PROJECT_DIR$/src/moa/tasks/LearnClusterBaggingModel.java" />
         <option value="$PROJECT_DIR$/src/moa/tasks/LearnModel.java" />
         <option value="$PROJECT_DIR$/src/moa/streams/generators/RandomTreeGenerator.java" />
         <option value="$PROJECT_DIR$/src/moa/options/AbstractOptionHandler.java" />
         <option value="$PROJECT_DIR$/src/weka/clusterers/XMeans.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/HoeffdingOptionTree.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingOptionTree.java" />
-        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
         <option value="$PROJECT_DIR$/src/moa/streams/net/UDPDataSender.java" />
         <option value="$PROJECT_DIR$/src/moa/streams/net/UDPDataReciever.java" />
         <option value="$PROJECT_DIR$/src/moa/streams/UDPFileStream.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingOptionTree.java" />
+        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBoostASHOT.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBoost.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java" />
       </list>
     </option>
   </component>
@@ -156,7 +208,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,12 +280,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FASC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FASC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classifiers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -493,11 +567,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="24" width="1440" height="850" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -506,11 +579,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20709631" sideWeight="0.80594903" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20709631" sideWeight="0.7209632" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18413597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26912183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -550,117 +624,107 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/moa/streams/net/UDPDataReciever.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/MiscUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="44" selection-start="1461" selection-end="1461" vertical-scroll-proportion="-5.6666665">
+        <state line="66" column="91" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.5686275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="68" selection-start="2368" selection-end="2368" vertical-scroll-proportion="0.23529412" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBagASHT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="81" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/plaf/metal/MetalProgressBarUI.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBoostASHOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="4585" selection-end="4585" vertical-scroll-proportion="-86.5">
+        <state line="86" column="48" selection-start="3093" selection-end="3093" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/BufferStrategyPaintManager.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/options/AbstractOptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="0" selection-start="9978" selection-end="9978" vertical-scroll-proportion="-86.5">
+        <state line="57" column="0" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="26" selection-start="16376" selection-end="16376" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/InstanceConditionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.13043478">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/SystemEventQueueUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/core/EuclideanDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="3938" selection-end="3938" vertical-scroll-proportion="-140.5">
+        <state line="237" column="13" selection-start="8065" selection-end="8065" vertical-scroll-proportion="3.15">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/JProgressBar.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="13" selection-start="3872" selection-end="3872" vertical-scroll-proportion="0.3325359">
+        <state line="69" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-168.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/gui/TaskManagerPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/DoubleVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="51" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.14354067">
+        <state line="74" column="45" selection-start="2237" selection-end="2248" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/RepaintManager.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="692" column="0" selection-start="24110" selection-end="24110" vertical-scroll-proportion="0.4138756">
+        <state line="86" column="65" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-96.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/java/awt/EventDispatchThread.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="5296" selection-end="5296" vertical-scroll-proportion="0.395881">
+        <state line="34" column="42" selection-start="981" selection-end="981" vertical-scroll-proportion="-42.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/plaf/basic/BasicTableUI.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBoost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2072" column="0" selection-start="78666" selection-end="78666" vertical-scroll-proportion="-89.5">
+        <state line="101" column="28" selection-start="3702" selection-end="3702" vertical-scroll-proportion="-456.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/CellRendererPane.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="4157" selection-end="4157" vertical-scroll-proportion="-89.5">
+        <state line="114" column="120" selection-start="3919" selection-end="3919" vertical-scroll-proportion="-146.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/plaf/basic/BasicProgressBarUI.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingOptionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="0" selection-start="13211" selection-end="13211" vertical-scroll-proportion="0.3320965">
+        <state line="51" column="46" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-6.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/plaf/ComponentUI.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="5809" selection-end="5809" vertical-scroll-proportion="0.3320965">
+        <state line="137" column="12" selection-start="5137" selection-end="5144" vertical-scroll-proportion="0.49885058">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="751" column="0" selection-start="28263" selection-end="28263" vertical-scroll-proportion="0.33205375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.20/src.zip!/java/io/FilterInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="15" selection-start="5408" selection-end="5408" vertical-scroll-proportion="0.3320965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/InputStreamProgressMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="11" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-1.1595547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/streams/UDPFileStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="738" selection-end="738" vertical-scroll-proportion="-4.2096477">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
