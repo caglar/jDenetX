@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/moa/core/EuclideanSimilarityDiscoverer.java" line="32" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/moa/core/EuclideanSimilarityDiscoverer.java" line="77" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d6f80956-7349-4d26-ae6a-1ee0f7f52ee6" name="Default" comment="" />
@@ -69,8 +69,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -80,10 +80,82 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OzaBag.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBag.java">
+      <file leaf-file-name="EnsembleEntropy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ensemble/EnsembleEntropy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="-54.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="54" selection-start="5355" selection-end="5355" vertical-scroll-proportion="-13.777778">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveClusterBagging.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="62" selection-start="612" selection-end="619" vertical-scroll-proportion="-5.4814816">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASHoeffdingTreeNB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingTreeNB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="13" selection-start="931" selection-end="931" vertical-scroll-proportion="60.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstanceClassesPool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/core/InstanceClassesPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="17" selection-start="399" selection-end="399" vertical-scroll-proportion="-81.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instances.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weka/core/Instances.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="39" selection-start="2163" selection-end="2163" vertical-scroll-proportion="74.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelfOzaBoostID.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoostID.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="77" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.6638298">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VotedInstancePool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/core/VotedInstancePool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="16" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluateActiveBoostingIDModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveBoostingIDModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="313" column="38" selection-start="14408" selection-end="14408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,22 +171,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoostASHOT.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ensemble/EnsembleEntropy.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ensemble/QBC.java" />
-        <option value="$PROJECT_DIR$/src/moa/core/DoubleVector.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBoostASHOT.java" />
         <option value="$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java" />
         <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveLearningModel.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBag.java" />
-        <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java" />
         <option value="$PROJECT_DIR$/src/weka/core/DenseInstance.java" />
         <option value="$PROJECT_DIR$/src/weka/core/Instances.java" />
         <option value="$PROJECT_DIR$/src/moa/core/SimilarityDiscoverer.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/OzaBag.java" />
+        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveBoostingModel.java" />
+        <option value="$PROJECT_DIR$/src/weka/core/AbstractInstance.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java" />
+        <option value="$PROJECT_DIR$/src/weka/core/NormalizableDistance.java" />
+        <option value="$PROJECT_DIR$/src/moa/tasks/EvaluateActiveBoostingIDModel.java" />
+        <option value="$PROJECT_DIR$/src/moa/core/EuclideanSimilarityDiscoverer.java" />
+        <option value="$PROJECT_DIR$/src/moa/classifiers/ensemble/QBC.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java" />
         <option value="$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoostID.java" />
-        <option value="$PROJECT_DIR$/src/moa/core/EuclideanSimilarityDiscoverer.java" />
       </list>
     </option>
   </component>
@@ -157,8 +229,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,10 +236,6 @@
               <option name="myItemId" value="FASC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -178,72 +244,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neighboursearch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,28 +276,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="moa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,25 +303,38 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
   </component>
   <component name="RunManager" selected="Application.TaskLauncher">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
@@ -415,8 +406,14 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="JProfiler" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -581,22 +578,25 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="24" width="1440" height="850" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="24" width="1415" height="850" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4532578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32719547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1955105" sideWeight="0.72521245" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30088496" sideWeight="0.73512745" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26487252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2549575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -639,120 +639,102 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/weka/core/EuclideanDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="13" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/weka/core/AbstractInstance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="44" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.43037975">
-          <folding />
-        </state>
+        <state line="727" column="0" selection-start="23027" selection-end="23027" vertical-scroll-proportion="0.025477707" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/DenseInstance.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/core/EuclideanDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="9" selection-start="4443" selection-end="4443" vertical-scroll-proportion="0.3322785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/SparseInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="18" selection-start="8268" selection-end="8281" vertical-scroll-proportion="0.62025315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/Instance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="18" selection-start="8051" selection-end="8051" vertical-scroll-proportion="-109.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/Optimization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="52" selection-start="7850" selection-end="7850" vertical-scroll-proportion="0.025917927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/neighboursearch/BallTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="634" column="19" selection-start="22492" selection-end="22492" vertical-scroll-proportion="0.84449244">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ensemble/QBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="-0.33693305">
-          <folding />
-        </state>
+        <state line="234" column="34" selection-start="7982" selection-end="7982" vertical-scroll-proportion="0.9426752" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/core/EuclideanSimilarityDiscoverer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="18" selection-start="2904" selection-end="2904" vertical-scroll-proportion="2.3585312">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoostID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="19" selection-start="8250" selection-end="8250" vertical-scroll-proportion="0.6177106">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="125" column="32" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.025477707" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="905" selection-end="913" vertical-scroll-proportion="0.026258206">
+        <state line="192" column="28" selection-start="6949" selection-end="6949" vertical-scroll-proportion="0.33265308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/core/VotedInstancePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="16" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/tasks/EvaluateActiveBoostingIDModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="38" selection-start="14408" selection-end="14408" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/core/InstanceClassesPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="399" selection-end="399" vertical-scroll-proportion="-81.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/DoubleVector.java">
+    <entry file="jar:///usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/rt.jar!/java/util/AbstractList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="51" selection-start="965" selection-end="992" vertical-scroll-proportion="0.12448133">
+        <state line="5" column="29" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.2631578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ensemble/EnsembleEntropy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="-54.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/Classifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="16" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.3319149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/AbstractClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="22" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-1.0978724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBagging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="62" selection-start="612" selection-end="619" vertical-scroll-proportion="-5.4814816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ASHoeffdingTreeNB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="931" selection-end="931" vertical-scroll-proportion="60.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/weka/core/Instances.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="807" column="39" selection-start="26667" selection-end="26677" vertical-scroll-proportion="0.4595186">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="65" column="39" selection-start="2163" selection-end="2163" vertical-scroll-proportion="74.5">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moa/classifiers/ActiveClusterBaggingASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="2" selection-start="10077" selection-end="10172" vertical-scroll-proportion="0.62655604">
+        <state line="128" column="54" selection-start="5355" selection-end="5355" vertical-scroll-proportion="-13.777778">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/core/ClusterTrainingDataHarvester.java">
+    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/SelfOzaBoostID.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="813" selection-end="813" vertical-scroll-proportion="0.45435685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moa/classifiers/OzaBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="155" column="77" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.6638298">
           <folding />
         </state>
       </provider>
