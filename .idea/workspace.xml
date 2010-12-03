@@ -75,10 +75,32 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EvaluateActiveLearningModel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EvaluateActiveLearningModel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="5" selection-start="3501" selection-end="10388" vertical-scroll-proportion="-12.37037">
+            <state line="226" column="80" selection-start="10392" selection-end="10392" vertical-scroll-proportion="0.57915056">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluateActiveBoostingIDModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="223" column="40" selection-start="10003" selection-end="10043" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveClusterBaggingASHT.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ActiveClusterBaggingASHT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="235" column="53" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,17 +111,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="18" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvaluateActiveBoostingIDModel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="4" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.33333334">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -172,8 +183,8 @@
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/DoubleVector.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ASHoeffdingOptionTree.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/SelfOzaBoostID.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java" />
       </list>
     </option>
   </component>
@@ -597,7 +608,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45865634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,10 +619,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.317757" sideWeight="0.6614987" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.317757" sideWeight="0.75452197" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39922482" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2364341" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2364341" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -653,48 +664,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="659" column="0" selection-start="25556" selection-end="25556" vertical-scroll-proportion="0.29795158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/NaiveBayes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="54" selection-start="5591" selection-end="5591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/GaussianNumericAttributeClassObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="122" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/sampling/ReservoirSampling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="-0.24208567">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/sampling/Reservoir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/DoubleVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="0" selection-start="4782" selection-end="4782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/AutoExpandVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="11" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0">
@@ -751,16 +720,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/clusterers/SimpleKMeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="5" selection-start="3501" selection-end="10388" vertical-scroll-proportion="-12.37037">
+        <state line="1225" column="16" selection-start="38070" selection-end="38070" vertical-scroll-proportion="0.33183858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/sampling/Reservoir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/NullMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0726257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/StandardTaskMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="946" selection-end="946" vertical-scroll-proportion="0.078156315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/TaskMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="925" selection-end="956" vertical-scroll-proportion="0.0726257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ActiveClusterBaggingASHT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="235" column="53" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="4" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.33333334">
+        <state line="223" column="40" selection-start="10003" selection-end="10043" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="80" selection-start="10392" selection-end="10392" vertical-scroll-proportion="0.57915056">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
