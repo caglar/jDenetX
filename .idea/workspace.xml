@@ -75,19 +75,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GaussianNumericAttributeClassObserver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/GaussianNumericAttributeClassObserver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="122" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvaluateActiveLearningModel.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EvaluateActiveLearningModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="0" selection-start="6314" selection-end="8641" vertical-scroll-proportion="0.7959641">
+            <state line="227" column="5" selection-start="3501" selection-end="10388" vertical-scroll-proportion="-12.37037">
               <folding />
             </state>
           </provider>
@@ -102,11 +93,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluateActiveBoostingIDModel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EvaluateActiveBoostingIDModel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="177" column="4" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.33333334">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ASHoeffdingOptionTree.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/SelfOzaBoostID.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java" />
       </list>
     </option>
   </component>
@@ -659,13 +653,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/weka/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1322" column="0" selection-start="38329" selection-end="38329" vertical-scroll-proportion="0.40595904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="659" column="0" selection-start="25556" selection-end="25556" vertical-scroll-proportion="0.29795158">
@@ -750,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/MeasureStreamSpeed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="21" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0">
@@ -764,10 +744,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/SelfOzaBoost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="25" selection-start="6252" selection-end="6265" vertical-scroll-proportion="0.33174226">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveLearningModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="6314" selection-end="8641" vertical-scroll-proportion="0.7959641">
+        <state line="227" column="5" selection-start="3501" selection-end="10388" vertical-scroll-proportion="-12.37037">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="4" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.33333334">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
