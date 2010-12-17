@@ -102,19 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SizeOf.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SizeOf.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/SizeOf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="13" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestInstancesHists.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tests/TestInstancesHists.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.33267328">
+            <state line="31" column="13" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-0.003960396">
               <folding />
             </state>
           </provider>
@@ -558,21 +549,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/BasicClassificationPerformanceEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/cluster/SphereCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="11" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/SilhouetteCoefficient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="290" selection-end="290" vertical-scroll-proportion="0.026694044" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/AbstractClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="200" column="22" selection-start="6977" selection-end="6977" vertical-scroll-proportion="3.4033484" />
@@ -630,16 +606,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/SizeOf.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ASHoeffdingOptionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
+        <state line="23" column="13" selection-start="947" selection-end="947" vertical-scroll-proportion="0.12871288">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tests/TestInstancesHists.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/CoOzaBagASHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.33267328">
+        <state line="2" column="24" selection-start="49" selection-end="94" vertical-scroll-proportion="0.051485147">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/WeightedMajorityAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/SizeOf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="13" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-0.003960396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/ensemble/EnsembleEntropy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="225" selection-end="225" vertical-scroll-proportion="0.25742576">
           <folding />
         </state>
       </provider>
