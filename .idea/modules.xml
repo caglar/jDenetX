@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FASC.iml" filepath="$PROJECT_DIR$/FASC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jDenetX.iml" filepath="$PROJECT_DIR$/jDenetX.iml" />
     </modules>
   </component>
 </project>

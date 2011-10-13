@@ -28,7 +28,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingTree.java" line="0" class="Class at HoeffdingTree.java:0" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/NominalAttributeClassObserver.java" line="86" class="tr.gov.ulakbim.emoa.classifiers.attributes.NominalAttributeClassObserver" package="tr.gov.ulakbim.emoa.classifiers.attributes">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -78,70 +78,97 @@
     <ui_properties />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="FASC" />
+    <favorites_list name="FASC">
+      <favorite_root url="weka.classifiers.Evaluation" module="FASC" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HoeffdingOptionTree.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTree.java">
+      <file leaf-file-name="HoeffdingTreeNB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/HoeffdingTreeNB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="669" column="18" selection-start="26113" selection-end="26113" vertical-scroll-proportion="0.0">
+            <state line="34" column="24" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleVector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/DoubleVector.java">
+      <file leaf-file-name="NominalAttributeClassObserver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/NominalAttributeClassObserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="2" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicClassificationPerformanceEvaluator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/BasicClassificationPerformanceEvaluator.java">
+      <file leaf-file-name="NaiveBayes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/NaiveBayes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="177" selection-start="4029" selection-end="4029" vertical-scroll-proportion="0.0">
+            <state line="139" column="68" selection-start="6067" selection-end="6067" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvalModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="10" selection-start="1840" selection-end="1860" vertical-scroll-proportion="-8.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvalActiveBoostingID.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalActiveBoostingID.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="68" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.024390243">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Evaluation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/Evaluation.java">
+        <entry file="file://$PROJECT_DIR$/src/weka/classifiers/Evaluation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="9" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+            <state line="3317" column="61" selection-start="125859" selection-end="125859" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExperimentGTVS1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/ExperimentGTVS1.java">
+      <file leaf-file-name="HoeffdingTree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/HoeffdingTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="71" selection-start="5388" selection-end="5388" vertical-scroll-proportion="0.0">
+            <state line="436" column="20" selection-start="16471" selection-end="16471" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttributeSplitSuggestion.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/AttributeSplitSuggestion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="11" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoubleVector.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/core/DoubleVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="145" column="45" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.63757116">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GaussianNumericAttributeClassObserver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/GaussianNumericAttributeClassObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="47" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GaussianEstimator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/core/GaussianEstimator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoGainSplitCriterion.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/splits/InfoGainSplitCriterion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,24 +188,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/EuclideanSimilarityDiscoverer.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/SelfOzaBoostID.java" />
-        <option value="$PROJECT_DIR$/src/weka/core/Instances.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingTree.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTreeNBAdaptive.java" />
-        <option value="$PROJECT_DIR$/src/weka/core/Utils.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTreeNB.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/options/AbstractOptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/GaussianEstimator.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/conditionals/InstanceConditionalTest.java" />
         <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTree.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/DoubleVector.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/BasicClassificationPerformanceEvaluator.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/ExperimentGTVS1.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/Evaluation.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalModel.java" />
-        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalActiveBoostingID.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/NominalAttributeMultiwayTest.java" />
+        <option value="$PROJECT_DIR$/src/weka/attributeSelection/PrincipalComponents.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/conditionals/InstanceConditionalBinaryTest.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/AttributeSplitSuggestion.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/NominalAttributeBinaryTest.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/NumericAttributeBinaryTest.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/NominalAttributeClassObserver.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingTree.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/splits/InfoGainSplitCriterion.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/attributes/GaussianNumericAttributeClassObserver.java" />
+        <option value="$PROJECT_DIR$/src/weka/classifiers/Evaluation.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/NaiveBayes.java" />
+        <option value="$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/core/DoubleVector.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -229,78 +259,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tr.gov.ulakbim.emoa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tr.gov.ulakbim.emoa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="experiments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FASC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tr.gov.ulakbim.emoa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="experiments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wrappers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Tests" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -419,11 +377,44 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="Scope">
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FASC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jDenetX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FASC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jDenetX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tr.gov.ulakbim.jDenetX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -433,8 +424,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="options.searchVisible" value="true" />
@@ -457,9 +448,9 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ExperimentGTVS1">
+  <component name="RunManager" selected="Application.TaskLauncher">
     <configuration default="false" name="TaskLauncher" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="tr.gov.ulakbim.emoa.gui.TaskLauncher" />
+      <option name="MAIN_CLASS_NAME" value="tr.gov.ulakbim.jDenetX.gui.TaskLauncher" />
       <option name="VM_PARAMETERS" value="-javaagent:$APPLICATION_HOME_DIR$/bin/sizeofag.jar -server -XX:NewRatio=2 -XX:+AggressiveOpts -XX:LargePageSizeInBytes=4m -XX:+UseFastAccessorMethods -XX:+UseStringCache  -XX:+UseStringCache -Xms256m -Xmx2048m" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -468,7 +459,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FASC" />
+      <module name="jDenetX" />
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="54968" />
@@ -486,7 +477,7 @@
       <method />
     </configuration>
     <configuration default="false" name="ExperimentGTVS1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="tr.gov.ulakbim.emoa.experiments.ExperimentGTVS1" />
+      <option name="MAIN_CLASS_NAME" value="tr.gov.ulakbim.jDenetX.experiments.ExperimentGTVS1" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -495,7 +486,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FASC" />
+      <module name="jDenetX" />
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="47418" />
@@ -633,9 +624,20 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value="VISIBILITY_SORTER,SHOW_INTERFACES" />
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -679,29 +681,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="24" width="1440" height="852" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="24" width="1440" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922408" sideWeight="0.75817925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922408" sideWeight="0.75817925" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32290184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24945612" sideWeight="0.75817925" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51778096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24909486" sideWeight="0.7546628" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.515873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33568406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15083393" sideWeight="0.18065433" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971244" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15591007" sideWeight="0.75817925" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24182077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294714" sideWeight="0.6784203" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33245382" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.9928109" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30456853" sideWeight="0.7546628" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971036" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22070453" sideWeight="0.7572559" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24274406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922408" sideWeight="0.75817925" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow from" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30474934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39922482" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -709,6 +714,15 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -720,6 +734,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -743,120 +758,183 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/options/AbstractOptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/evaluation/EvaluationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="71" selection-start="4883" selection-end="4883" vertical-scroll-proportion="1.8835616">
+        <state line="36" column="13" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.6676301" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/estimators/NormalEstimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="30" selection-start="6438" selection-end="6441" vertical-scroll-proportion="4.8374815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/experiment/ResultMatrixGnuPlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="18" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.020497805" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/CostMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="9" selection-start="2023" selection-end="2023" vertical-scroll-proportion="-0.021097047" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/evaluation/MarginCurve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/evaluation/TwoClassStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="13" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-1.0253165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/NaiveBayes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="68" selection-start="6067" selection-end="6067" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/trees/J48.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/HoeffdingTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="31" selection-start="7750" selection-end="7750" vertical-scroll-proportion="0.05479452">
+        <state line="436" column="20" selection-start="16471" selection-end="16471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weka/core/AbstractInstance.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/AttributeSplitSuggestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="736" column="0" selection-start="23189" selection-end="23189" vertical-scroll-proportion="0.19958848">
+        <state line="36" column="11" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/BasicClassificationPerformanceEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/GaussianNumericAttributeClassObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="177" selection-start="4029" selection-end="4029" vertical-scroll-proportion="0.0">
+        <state line="42" column="47" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/core/DoubleVector.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/core/GaussianEstimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="2" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/splits/InfoGainSplitCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/classifiers/HoeffdingOptionTree.java">
+    <entry file="file://$PROJECT_DIR$/src/weka/classifiers/Evaluation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="669" column="18" selection-start="26113" selection-end="26113" vertical-scroll-proportion="0.0">
+        <state line="3317" column="61" selection-start="125859" selection-end="125859" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/gui/clustertab/ClusteringAlgoPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/gui/clustertab/ClusteringEvalPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/gui/clustertab/ClusteringSetupTab.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateModel.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/attributes/NominalAttributeClassObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.654321">
+        <state line="26" column="0" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/README">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/classifiers/HoeffdingTreeNB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="34" column="24" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/evaluation/Evaluation.java">
+    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/jDenetX/core/DoubleVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+        <state line="145" column="45" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.63757116">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/ExperimentGTVS1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="71" selection-start="5388" selection-end="5388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/tasks/EvaluateActiveBoostingIDModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="-8.882716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1840" selection-end="1860" vertical-scroll-proportion="-8.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tr/gov/ulakbim/emoa/experiments/wrappers/EvalActiveBoostingID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="68" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.024390243">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="Copyright.UI">
         <settings>
           <splitter-proportions />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6.0_latest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FASC</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>fasc_libs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
         </settings>
       </state>
       <state key="ScopeChooserConfigurable.UI">
