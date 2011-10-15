@@ -89,12 +89,12 @@ public class ClassOptionSelectionPanel extends JPanel {
 
     public Class<?>[] findSuitableClasses(Class<?> requiredType) {
         AutoExpandVector<Class<?>> finalClasses = new AutoExpandVector<Class<?>>();
-        Class<?>[] classesFound = AutoClassDiscovery.findClassesOfType("tr.gov.ulakbim.emoa",
+        Class<?>[] classesFound = AutoClassDiscovery.findClassesOfType("tr.gov.ulakbim.jDenetX",
                 requiredType);
         for (Class<?> foundClass : classesFound) {
             finalClasses.add(foundClass);
         }
-        Class<?>[] tasksFound = AutoClassDiscovery.findClassesOfType("tr.gov.ulakbim.emoa",
+        Class<?>[] tasksFound = AutoClassDiscovery.findClassesOfType("tr.gov.ulakbim.jDenetX",
                 Task.class);
         for (Class<?> foundTask : tasksFound) {
             try {
