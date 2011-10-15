@@ -35,7 +35,9 @@ public class NaiveBayes extends AbstractClassifier {
 
     @SuppressWarnings("hiding")
     public static final String classifierPurposeString = "Naive Bayes classifier: performs classic bayesian prediction while making naive assumption that all inputs are independent.";
+
     protected DoubleVector observedClassDistribution;
+
     protected AutoExpandVector<AttributeClassObserver> attributeObservers;
 
     @Override
