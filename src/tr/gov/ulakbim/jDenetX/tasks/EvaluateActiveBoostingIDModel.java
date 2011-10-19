@@ -7,7 +7,9 @@ import tr.gov.ulakbim.jDenetX.core.VotedInstance;
 import tr.gov.ulakbim.jDenetX.core.VotedInstancePool;
 import tr.gov.ulakbim.jDenetX.evaluation.ClassificationPerformanceEvaluator;
 import tr.gov.ulakbim.jDenetX.evaluation.LearningEvaluation;
+import tr.gov.ulakbim.jDenetX.evaluation.SelfOzaBoostClassificationPerformanceEvaluator;
 import tr.gov.ulakbim.jDenetX.options.ClassOption;
+import tr.gov.ulakbim.jDenetX.options.FileOption;
 import tr.gov.ulakbim.jDenetX.options.IntOption;
 import tr.gov.ulakbim.jDenetX.streams.CachedInstancesStream;
 import tr.gov.ulakbim.jDenetX.streams.InstanceStream;
@@ -19,12 +21,14 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
+
 import java.util.*;
 
 public class EvaluateActiveBoostingIDModel extends MainTask {
+
     @Override
     public String getPurposeString() {
-        return "Evaluates a Cotrain model on a stream.";
+        return "Evaluates a Active Boosting model on a stream with a Information Density.";
     }
 
     /**
@@ -37,24 +41,49 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             "Classifier to evaluate.", Classifier.class, "LearnClusterBaggingModel");
 
     public ClassOption testStreamOption = new ClassOption("test_stream",
-            't', "test on a Stream to evaluate on.", InstanceStream.class,
+            't',
+            "test on a Stream to evaluate on.",
+            InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption streamOption = new ClassOption("stream", 's',
-            "Stream to evaluate on.", InstanceStream.class,
+    public ClassOption streamOption = new ClassOption("stream",
+            's',
+            "Stream to evaluate on.",
+            InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption evaluatorOption = new ClassOption("evaluator", 'e',
+    public ClassOption evaluatorOption = new ClassOption("evaluator",
+            'e',
             "Classification performance evaluation method.",
             ClassificationPerformanceEvaluator.class,
             "BasicClassificationPerformanceEvaluator");
 
-    public IntOption maxInstancesOption = new IntOption("maxInstances", 'i',
-            "Maximum number of instances to test.", 1000000, 0,
+    public IntOption maxInstancesOption = new IntOption("maxInstances",
+            'i',
+            "Maximum number of instances to test.",
+            1000000,
+            0,
             Integer.MAX_VALUE);
 
-    public IntOption poolSizeOption = new IntOption("poolRatio", 'p',
-            "Maximum amount ratio for pool size.", 1000, 0,
+    public IntOption rrdStepSizeOption = new IntOption("stepSize",
+            'r',
+            "Step size for the rrd files.",
+            300,
+            0,
+            Integer.MAX_VALUE);
+
+    public FileOption rrdBaseDirOption = new FileOption("baseDir",
+            'b',
+            "Base Directory to save the rrd files in",
+            "/home/caglar/rrd_files/",
+            "rrd",
+            false);
+
+    public IntOption poolSizeOption = new IntOption("poolRatio",
+            'p',
+            "Maximum amount ratio for pool size.",
+            150,
+            0,
             Integer.MAX_VALUE);
 
     private static final int SAMPLING_LIMIT = 10;
@@ -83,7 +112,6 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         long instancesProcessed = 0;
         InstanceStream testStream = (InstanceStream) getPreparedClassOption(this.testStreamOption);
         ClassificationPerformanceEvaluator evaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
-        evaluator.reset();
 
         while (testStream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
@@ -107,6 +135,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
                         estimatedRemainingInstances = maxRemaining;
                     }
                 }
+
                 monitor
                         .setCurrentActivityFractionComplete(estimatedRemainingInstances < 0 ? -1.0
                                 : (double) instancesProcessed
@@ -116,6 +145,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
                             evaluator.getPerformanceMeasurements()));
                 }
             }
+
         }
         return returnStatus;
     }
@@ -177,14 +207,27 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         int maxInstances = this.maxInstancesOption.getValue();
         long instancesProcessed = 0;
         monitor.setCurrentActivity("Evaluating model...", -1.0);
+
         while (stream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
             testInst = (Instance) stream.nextInstance().copy();
             int trueClass = (int) testInst.classValue();
             testInst.setClassMissing();
             double[] prediction = model.getVotesForInstance(testInst);
-            evaluator.addClassificationAttempt(trueClass, prediction, testInst
-                    .weight());
+            if (evaluator instanceof SelfOzaBoostClassificationPerformanceEvaluator) {
+                ((SelfOzaBoostClassificationPerformanceEvaluator) evaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
+                        .weight());
+            } else {
+                evaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
+            }
+            Enumeration<String> enume = testInst.classAttribute().enumerateValues();
+
+            while (enume.hasMoreElements()) {
+                String val = enume.nextElement();
+                System.out.println("My Val is " + val);
+            }
+            System.exit(0);
+
             instancesProcessed++;
             if (instancesProcessed % INSTANCES_BETWEEN_MONITOR_UPDATES == 0) {
                 if (monitor.taskShouldAbort()) {

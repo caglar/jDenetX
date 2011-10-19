@@ -1,30 +1,22 @@
-/*
- *    BasicClassificationPerformanceEvaluator.java
- *    Copyright (C) 2007 University of Waikato, Hamilton, New Zealand
- *    @author Richard Kirkby (rkirkby@cs.waikato.ac.nz)
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 2 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program; if not, write to the Free Software
- *    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-*/
-
 package tr.gov.ulakbim.jDenetX.evaluation;
 
+import com.sun.deploy.util.ArrayUtil;
+import org.apache.commons.lang3.ArrayUtils;
 import tr.gov.ulakbim.jDenetX.AbstractMOAObject;
 import tr.gov.ulakbim.jDenetX.core.Measurement;
 import weka.core.Utils;
 
-public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
+import java.io.ObjectInputStream;
+import java.util.HashMap;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: caglar
+ * Date: 10/19/11
+ * Time: 3:30 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAObject
         implements ClassificationPerformanceEvaluator {
 
     private static final long serialVersionUID = 1L;
@@ -38,6 +30,8 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
     protected double[] rowKappa;
 
     protected int[] instanceClassesMap;
+
+    protected HashMap<String, Integer> ClassesCountMap;
 
     protected int numClasses;
 
@@ -54,11 +48,12 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
         this.numClasses = numClasses;
         this.rowKappa = new double[numClasses];
         this.columnKappa = new double[numClasses];
-        instanceClassesMap = new int[numClasses];
-
+        this.instanceClassesMap = new int[numClasses];
+        this.ClassesCountMap = new HashMap<String, Integer>();
         for (int i = 0; i < this.numClasses; i++) {
             this.rowKappa[i] = 0;
             this.columnKappa[i] = 0;
+            this.instanceClassesMap[i] = 0;
         }
         this.SE = 0.0;
         NoOfProcessedInstances = 0;
@@ -66,7 +61,8 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
         this.weightCorrect = 0.0;
     }
 
-    public void addClassificationAttempt(int trueClass, double[] classVotes,
+    public void addClassificationAttempt(int trueClass,
+                                         double[] classVotes,
                                          double weight) {
         if (weight > 0.0) {
             NoOfProcessedInstances++;
@@ -81,12 +77,56 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
             this.SE += Evaluation.getSqError(trueClass, classVotes, weight);
             this.rowKappa[predictedClass] += weight;
             this.columnKappa[trueClass] += weight;
-            instanceClassesMap[trueClass]++;
+            this.instanceClassesMap[trueClass]++;
         }
     }
 
+    public void addClassificationAttempt (int trueClass,
+                                         String className,
+                                         double[] classVotes,
+                                         double weight) {
+        if (weight > 0.0) {
+            NoOfProcessedInstances++;
+
+            if (this.weightObserved == 0) {
+                reset(classVotes.length > 1 ? classVotes.length : 2);
+            }
+            this.weightObserved += weight;
+            int predictedClass = Utils.maxIndex(classVotes);
+            if (predictedClass == trueClass) {
+                this.weightCorrect += weight;
+            }
+            this.SE += Evaluation.getSqError(trueClass, classVotes, weight);
+            this.rowKappa[predictedClass] += weight;
+            this.columnKappa[trueClass] += weight;
+            instanceClassesMap[trueClass]++;
+            ClassesCountMap.put(className, (Integer)(instanceClassesMap[trueClass]));
+        }
+    }
+
+    public String getClassesRatioMap(){
+        String message = "";
+
+        for (String key : ClassesCountMap.keySet()) {
+            double ratio = ((double)ClassesCountMap.get(key) / (double) NoOfProcessedInstances) * 100;
+            message += key + ": " + ratio + "% \n";
+        }
+        return message;
+    }
+
+    public Measurement[] getClassesRatioMeasurements(){
+        Measurement []measurements = new Measurement[ClassesCountMap.size()];
+        int i = 0;
+        for (String key : ClassesCountMap.keySet()) {
+            double ratio = ((double)ClassesCountMap.get(key) / (double) NoOfProcessedInstances) * 100;
+            measurements[i] = new Measurement(key, ratio);
+            i++;
+        }
+        return measurements;
+    }
+
     public Measurement[] getPerformanceMeasurements() {
-        return new Measurement[]{
+        Measurement basicMeasurements[] = new Measurement[]{
                 new Measurement("classified instances",
                         getTotalWeightObserved()),
                 new Measurement("classifications correct (percent)",
@@ -98,6 +138,9 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
                 new Measurement("Root Mean Square Error ",
                         getRMSE())
         };
+        Measurement classRatios[] = getClassesRatioMeasurements();
+        Measurement aggregatedMeasurements[] = (Measurement []) ArrayUtils.addAll(basicMeasurements, classRatios);
+        return aggregatedMeasurements;
     }
 
     public double getTotalWeightObserved() {
@@ -115,6 +158,14 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
     public double getFractionCorrectlyClassified() {
         return this.weightObserved > 0.0 ? this.weightCorrect
                 / this.weightObserved : 0.0;
+    }
+
+    public int getNoOfProcessedInstances() {
+        return NoOfProcessedInstances;
+    }
+
+    public HashMap<String, Integer> getClassesCountMap() {
+        return ClassesCountMap;
     }
 
     public double getFractionIncorrectlyClassified() {
@@ -140,5 +191,4 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
         Measurement.getMeasurementsDescription(getPerformanceMeasurements(),
                 sb, indent);
     }
-
 }

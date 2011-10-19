@@ -42,7 +42,7 @@ public class InfoGainSplitCriterion extends AbstractOptionHandler implements
                 .getValue()) < 2) {
             return Double.NEGATIVE_INFINITY;
         }
-        return computeEntropy(preSplitDist) - computeEntropy(postSplitDists);
+         return computeEntropy(preSplitDist) - computeEntropy(postSplitDists);
     }
 
     public double getRangeOfMerit(double[] preSplitDist) {

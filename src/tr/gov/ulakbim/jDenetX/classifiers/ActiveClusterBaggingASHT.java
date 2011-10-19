@@ -297,6 +297,7 @@ public class ActiveClusterBaggingASHT extends ActiveClusterBagging {
             confidenceVec.normalize();
             confidence = (confidenceVec.maxValue());
         }
+
         //Reconfigure the activeLearningRatio
         //For confidence measure add to the pool  and in order to fit the confidence value between 0 and 1 divide by success val
         if (confidence >= confidenceThreshold) {
