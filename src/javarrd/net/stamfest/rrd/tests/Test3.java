@@ -33,10 +33,10 @@
 
 package javarrd.net.stamfest.rrd.tests;
 
-import java.util.Arrays;
-
 import javarrd.net.stamfest.rrd.CommandResult;
 import javarrd.net.stamfest.rrd.RRDCachedClient;
+
+import java.util.Arrays;
 
 public class Test3 {
     public static void main(String argv[]) throws Exception {

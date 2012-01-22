@@ -1,12 +1,10 @@
 package tr.gov.ulakbim.jDenetX.evaluation;
 
-import com.sun.deploy.util.ArrayUtil;
 import org.apache.commons.lang3.ArrayUtils;
 import tr.gov.ulakbim.jDenetX.AbstractMOAObject;
 import tr.gov.ulakbim.jDenetX.core.Measurement;
 import weka.core.Utils;
 
-import java.io.ObjectInputStream;
 import java.util.HashMap;
 
 /**
@@ -38,13 +36,12 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
     private double SE = 0.0;
 
     private int NoOfProcessedInstances = 0;
-    //PrintWriter out = null;
 
     public void reset() {
         reset(this.numClasses);
     }
 
-    public void reset(int numClasses) {
+    public void reset (int numClasses) {
         this.numClasses = numClasses;
         this.rowKappa = new double[numClasses];
         this.columnKappa = new double[numClasses];
@@ -61,7 +58,7 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         this.weightCorrect = 0.0;
     }
 
-    public void addClassificationAttempt(int trueClass,
+    public void addClassificationAttempt (int trueClass,
                                          double[] classVotes,
                                          double weight) {
         if (weight > 0.0) {
@@ -104,7 +101,7 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         }
     }
 
-    public String getClassesRatioMap(){
+    public String getClassesRatioMap () {
         String message = "";
 
         for (String key : ClassesCountMap.keySet()) {
@@ -114,7 +111,7 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         return message;
     }
 
-    public Measurement[] getClassesRatioMeasurements(){
+    public Measurement[] getClassesRatioMeasurements () {
         Measurement []measurements = new Measurement[ClassesCountMap.size()];
         int i = 0;
         for (String key : ClassesCountMap.keySet()) {
@@ -125,7 +122,7 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         return measurements;
     }
 
-    public Measurement[] getPerformanceMeasurements() {
+    public Measurement[] getPerformanceMeasurements () {
         Measurement basicMeasurements[] = new Measurement[]{
                 new Measurement("classified instances",
                         getTotalWeightObserved()),
@@ -143,36 +140,40 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         return aggregatedMeasurements;
     }
 
-    public double getTotalWeightObserved() {
+    public double getTotalWeightObserved () {
         return this.weightObserved;
     }
 
-    public double getMSE() {
+    public double getMSE () {
         return (SE / (double) NoOfProcessedInstances);
     }
 
-    public double getRMSE() {
+    public double getRMSE () {
         return Math.sqrt(SE / (double) NoOfProcessedInstances);
     }
 
-    public double getFractionCorrectlyClassified() {
+    public double getFractionCorrectlyClassified () {
         return this.weightObserved > 0.0 ? this.weightCorrect
                 / this.weightObserved : 0.0;
     }
 
-    public int getNoOfProcessedInstances() {
+    public int getNoOfProcessedInstances () {
         return NoOfProcessedInstances;
     }
 
-    public HashMap<String, Integer> getClassesCountMap() {
+    public int[] getInstancesClassesCount (){
+        return this.instanceClassesMap;
+    }
+
+    public HashMap<String, Integer> getClassesCountMap () {
         return ClassesCountMap;
     }
 
-    public double getFractionIncorrectlyClassified() {
+    public double getFractionIncorrectlyClassified () {
         return 1.0 - getFractionCorrectlyClassified();
     }
 
-    public double getKappaStatistic() {
+    public double getKappaStatistic () {
         if (this.weightObserved > 0.0) {
             double p0 = getFractionCorrectlyClassified();
             double pc = 0.0;
@@ -187,7 +188,7 @@ public class SelfOzaBoostClassificationPerformanceEvaluator extends AbstractMOAO
         }
     }
 
-    public void getDescription(StringBuilder sb, int indent) {
+    public void getDescription (StringBuilder sb, int indent) {
         Measurement.getMeasurementsDescription(getPerformanceMeasurements(),
                 sb, indent);
     }

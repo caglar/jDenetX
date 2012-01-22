@@ -109,7 +109,7 @@ public class KMeans {
                 microclusters.add((CFCluster) clustering.get(i));
             } else {
                 System.out.println("Unsupported Cluster Type:" + clustering.get(i).getClass()
-                        + ". Cluster needs to extend tr.gov.ulakbim.emoa.cluster.CFCluster");
+                        + ". Cluster needs to extend tr.gov.ulakbim.jDenetX.cluster.CFCluster");
             }
         }
         Cluster[] centers = new Cluster[gtClustering.size()];

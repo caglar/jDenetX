@@ -5,6 +5,7 @@ import tr.gov.ulakbim.jDenetX.classifiers.SelfOzaBoostID;
 import tr.gov.ulakbim.jDenetX.core.ObjectRepository;
 import tr.gov.ulakbim.jDenetX.core.VotedInstance;
 import tr.gov.ulakbim.jDenetX.core.VotedInstancePool;
+import tr.gov.ulakbim.jDenetX.db.RRDResultsSaver;
 import tr.gov.ulakbim.jDenetX.evaluation.ClassificationPerformanceEvaluator;
 import tr.gov.ulakbim.jDenetX.evaluation.LearningEvaluation;
 import tr.gov.ulakbim.jDenetX.evaluation.SelfOzaBoostClassificationPerformanceEvaluator;
@@ -86,9 +87,11 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             0,
             Integer.MAX_VALUE);
 
+    private static ClassificationPerformanceEvaluator timerEvaluator;
     private static final int SAMPLING_LIMIT = 10;
     private static SelfOzaBoostID model;
     private static int noOfClassesInPool = 1;
+    private static final String RRDName = "gn3_demo_test.rrd";
 
     public EvaluateActiveBoostingIDModel() {
     }
@@ -112,6 +115,21 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         long instancesProcessed = 0;
         InstanceStream testStream = (InstanceStream) getPreparedClassOption(this.testStreamOption);
         ClassificationPerformanceEvaluator evaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
+        timerEvaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
+        RRDResultsSaver resultsSaver = new RRDResultsSaver(this.rrdStepSizeOption.getValue(), this.rrdBaseDirOption.getValue());
+
+        /*
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+
+                timerEvaluator.reset();
+            }
+        },
+        rrdStepSizeOption.getValue() * 1000,
+        rrdStepSizeOption.getValue() * 1000);
+          */
 
         while (testStream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
@@ -119,8 +137,21 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             int trueClass = (int) testInst.classValue();
             testInst.setClassMissing();
             double[] prediction = model.getVotesForInstance(testInst);
-            evaluator.addClassificationAttempt(trueClass, prediction, testInst
-                    .weight());
+
+            if (!resultsSaver.isRRDCreated()) {
+                 resultsSaver.createRRD(RRDName, testInst.numClasses(), testInst.classAttribute().enumerateValues());
+            }
+            if (evaluator instanceof SelfOzaBoostClassificationPerformanceEvaluator) {
+                ((SelfOzaBoostClassificationPerformanceEvaluator) evaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
+                        .weight());
+                ((SelfOzaBoostClassificationPerformanceEvaluator) timerEvaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
+                        .weight());
+                resultsSaver.updateRRDs(RRDName, (SelfOzaBoostClassificationPerformanceEvaluator) timerEvaluator);
+            } else {
+                evaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
+                timerEvaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
+            }
+
             instancesProcessed++;
             if (instancesProcessed % INSTANCES_BETWEEN_MONITOR_UPDATES == 0) {
                 if (monitor.taskShouldAbort()) {
@@ -214,19 +245,13 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             int trueClass = (int) testInst.classValue();
             testInst.setClassMissing();
             double[] prediction = model.getVotesForInstance(testInst);
+
             if (evaluator instanceof SelfOzaBoostClassificationPerformanceEvaluator) {
                 ((SelfOzaBoostClassificationPerformanceEvaluator) evaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
                         .weight());
             } else {
                 evaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
             }
-            Enumeration<String> enume = testInst.classAttribute().enumerateValues();
-
-            while (enume.hasMoreElements()) {
-                String val = enume.nextElement();
-                System.out.println("My Val is " + val);
-            }
-            System.exit(0);
 
             instancesProcessed++;
             if (instancesProcessed % INSTANCES_BETWEEN_MONITOR_UPDATES == 0) {

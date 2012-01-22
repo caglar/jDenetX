@@ -1,5 +1,6 @@
 package tr.gov.ulakbim.jDenetX.streams.net;
 
+
 /**
  * Created by IntelliJ IDEA.
  * User: caglar
@@ -7,7 +8,6 @@ package tr.gov.ulakbim.jDenetX.streams.net;
  * Time: 1:55:55 PM
  * To change this template use File | Settings | File Templates.
  */
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.*;
@@ -15,7 +15,7 @@ import java.net.*;
 /**
  * @author caglar
  */
-public class UDPDataReciever {
+public class UDPStreamReceiver {
 
     private int PortNo = 4000;
     private int PacketSize = 1024;
@@ -24,10 +24,9 @@ public class UDPDataReciever {
     private DatagramSocket Sock = null;
     private final String host = "127.0.0.1";
 
-    public UDPDataReciever() {
-    }
+    public UDPStreamReceiver() { }
 
-    public UDPDataReciever(int portNo, int packetSize) {
+    public UDPStreamReceiver(int portNo, int packetSize) {
         PortNo = portNo;
         PacketSize = packetSize;
     }
@@ -49,17 +48,32 @@ public class UDPDataReciever {
         }
         return sData;
     }
-
-    public void openSocket(int sockTimeout) throws SocketException {
-        SocketAddress sAddress = new InetSocketAddress("localhost", PortNo);
+    /*
+     * Tries to bind to a specific host
+     */
+    public void openHostSocket(int sockTimeout) throws SocketException {
+        SocketAddress sAddress = new InetSocketAddress(host, PortNo);
         Sock = new DatagramSocket(sAddress);
         Sock.setSoTimeout(sockTimeout);
+
     }
 
     public void openSocket(int portNo, int sockTimeout) throws SocketException {
-        portNo = PortNo;
+        PortNo = portNo;
         Sock = new DatagramSocket(PortNo);
         Sock.setSoTimeout(sockTimeout);
+        Sock.setReuseAddress(true);
+    }
+
+    public void openSocket(int sockTimeout) throws SocketException {
+        Sock = new DatagramSocket(PortNo);
+        Sock.setSoTimeout(sockTimeout);
+        Sock.setReuseAddress(true);
+    }
+
+    public void openSocket() throws SocketException {
+        Sock = new DatagramSocket(PortNo);
+        Sock.setReuseAddress(true);
     }
 
     public void closeSocket() {
@@ -94,7 +108,9 @@ public class UDPDataReciever {
             throw new NullPointerException("getPacketData: Socket can not be null!");
         }
         DatagramPacket packet = new DatagramPacket(new byte[PacketSize], PacketSize);
-        Sock.receive(packet);
+        if (Sock.isBound()) {
+            Sock.receive(packet);
+        }
         InetAddress remote_addr = packet.getAddress();
         if (HostConstraint) {
             if (remote_addr == RemoteAddr) {
@@ -106,4 +122,3 @@ public class UDPDataReciever {
         return packData;
     }
 }
-
