@@ -42,7 +42,7 @@ public class RRDResultsSaver {
         String argsDS[] = new String[noOfClasses + 3];
         int i = 0;
         while (classes.hasMoreElements()) {
-            argsDS[i] = "DS:" + classes.nextElement() + ":GAUGE:" + (StepSize * 2)/60 + ":" + 0 + ":" + MaxDS;
+            argsDS[i] = "DS:" + classes.nextElement() + ":GAUGE:" + (StepSize * 2) / 60 + ":" + 0 + ":" + MaxDS;
             i++;
         }
         argsDS[noOfClasses] = "RRA:MIN:0.5:12:2400";

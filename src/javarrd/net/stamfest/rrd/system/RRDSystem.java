@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>

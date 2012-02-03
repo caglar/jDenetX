@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>
@@ -38,12 +37,12 @@ public class TCPRRDCommandFactory implements RRDCommandFactory {
     private String host;
 
     public TCPRRDCommandFactory(int port, String host) {
-	this.port = port;
-	this.host = host;
+        this.port = port;
+        this.host = host;
     }
 
     @Override
     public RRDCommand createRRDCommand() throws Exception {
-	return new RRDp(host, port);
+        return new RRDp(host, port);
     }
 }

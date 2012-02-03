@@ -41,20 +41,20 @@ public class CommandResult {
     public boolean ok = false;
     public String error = null;
     public String output = null;
-    
+
     // support for output from special commands
     public HashMap<String, String> info = null;  // info, graphv
     public byte image[] = null; // graphv
-    
+
     public String toString() {
-	StringBuffer sb = new StringBuffer();
-	sb.append("ok:").append(ok).append('\n');
-	sb.append("u:").append(user);
-	sb.append(" s:").append(system);
-	sb.append(" t:").append(total).append('\n');
-	sb.append("message:").append(error).append('\n');
-	sb.append("output:").append(output).append('\n');
-	
-	return sb.toString();
+        StringBuffer sb = new StringBuffer();
+        sb.append("ok:").append(ok).append('\n');
+        sb.append("u:").append(user);
+        sb.append(" s:").append(system);
+        sb.append(" t:").append(total).append('\n');
+        sb.append("message:").append(error).append('\n');
+        sb.append("output:").append(output).append('\n');
+
+        return sb.toString();
     }
 }
