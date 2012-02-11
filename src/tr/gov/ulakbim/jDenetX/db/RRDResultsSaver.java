@@ -42,7 +42,7 @@ public class RRDResultsSaver {
         String argsDS[] = new String[noOfClasses + 3];
         int i = 0;
         while (classes.hasMoreElements()) {
-            argsDS[i] = "DS:" + classes.nextElement() + ":GAUGE:" + (StepSize * 2) / 60 + ":" + 0 + ":" + MaxDS;
+            argsDS[i] = "DS:" + classes.nextElement() + ":GAUGE:" + 1 + ":" + 0 + ":" + MaxDS;
             i++;
         }
         argsDS[noOfClasses] = "RRA:MIN:0.5:12:2400";
@@ -72,7 +72,7 @@ public class RRDResultsSaver {
         long endTime = System.currentTimeMillis();
         String arg = "N:";
         int[] instancesClassCounts = sbcpe.getInstancesClassesCount();
-        if (Math.abs(startTime - endTime) >= (StepSize * 1000)) {
+        if (Math.abs(startTime - endTime) >= (StepSize * 999)) {
             for (int i = 0; i < instancesClassCounts.length; i++) {
                 if (instancesClassCounts[i] == 0) {
                     arg += "U:";

@@ -87,7 +87,6 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             0,
             Integer.MAX_VALUE);
 
-    private static ClassificationPerformanceEvaluator timerEvaluator;
     private static final int SAMPLING_LIMIT = 10;
     private static SelfOzaBoostID model;
     private static int noOfClassesInPool = 1;
@@ -112,24 +111,15 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         int returnStatus = 1;
         Instance testInst = null;
         int maxInstances = this.maxInstancesOption.getValue();
-        long instancesProcessed = 0;
+        int instancesProcessed = 0;
+
         InstanceStream testStream = (InstanceStream) getPreparedClassOption(this.testStreamOption);
         ClassificationPerformanceEvaluator evaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
-        timerEvaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
+        ClassificationPerformanceEvaluator timerEvaluator = (ClassificationPerformanceEvaluator) getPreparedClassOption(this.evaluatorOption);
         RRDResultsSaver resultsSaver = new RRDResultsSaver(this.rrdStepSizeOption.getValue(), this.rrdBaseDirOption.getValue());
 
-        /*
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-
-                timerEvaluator.reset();
-            }
-        },
-        rrdStepSizeOption.getValue() * 1000,
-        rrdStepSizeOption.getValue() * 1000);
-          */
+        timerEvaluator.reset();
+        evaluator.reset();
 
         while (testStream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
@@ -141,15 +131,13 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             if (!resultsSaver.isRRDCreated()) {
                  resultsSaver.createRRD(RRDName, testInst.numClasses(), testInst.classAttribute().enumerateValues());
             }
+
             if (evaluator instanceof SelfOzaBoostClassificationPerformanceEvaluator) {
-                ((SelfOzaBoostClassificationPerformanceEvaluator) evaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
-                        .weight());
                 ((SelfOzaBoostClassificationPerformanceEvaluator) timerEvaluator).addClassificationAttempt(trueClass, testInst.classAttribute().value(trueClass), prediction, testInst
                         .weight());
                 resultsSaver.updateRRDs(RRDName, (SelfOzaBoostClassificationPerformanceEvaluator) timerEvaluator);
             } else {
                 evaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
-                timerEvaluator.addClassificationAttempt(trueClass, prediction, testInst.weight());
             }
 
             instancesProcessed++;
@@ -238,6 +226,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         int maxInstances = this.maxInstancesOption.getValue();
         long instancesProcessed = 0;
         monitor.setCurrentActivity("Evaluating model...", -1.0);
+        evaluator.reset();
 
         while (stream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
