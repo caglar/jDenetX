@@ -97,7 +97,7 @@ public class OCBoost extends AbstractClassifier {
             pipos[j] = 1.0;
             pineg[j] = 1.0;
             m[j] = -1;
-            if (this.ensemble[j].correctlyClassifies(inst) == true) {
+            if (this.ensemble[j].correctlyClassifies(inst)) {
                 m[j] = 1;
             }
             for (int k = j0; k <= j - 1; k++) {

@@ -187,7 +187,6 @@ public class UDPStreamReader implements Runnable {
                     }
                 }
                 if (message != null && message.length() > 0) {
-//                    System.out.println("Message is: " + message);
                     if(!m_UDPInstQueue.addLine(message)) {
                         throw new Exception("Couldn't add the row to the queue\n");
                     }

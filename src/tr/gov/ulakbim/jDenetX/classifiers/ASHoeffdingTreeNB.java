@@ -71,7 +71,7 @@ public class ASHoeffdingTreeNB extends HoeffdingTreeNBAdaptive {
                     //EXTENSION TO ASHT
                     // if size too big, resize tree ONLY Split Nodes
                     while (this.decisionNodeCount >= this.maxSize && this.treeRoot instanceof SplitNode) {
-                        if (this.resetTree == false) {
+                        if (!this.resetTree) {
                             resizeTree(this.treeRoot, ((SplitNode) this.treeRoot).instanceChildIndex(inst));
                             this.treeRoot = ((SplitNode) this.treeRoot).getChild(((SplitNode) this.treeRoot).instanceChildIndex(inst));
                         } else {

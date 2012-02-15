@@ -57,7 +57,7 @@ public class AdaHoeffdingOptionTree extends HoeffdingOptionTreeNB {
                 if (this.mcCorrectWeight <= this.nbCorrectWeight)
                     blCorrect = true;
             }
-            if (blCorrect == true) {
+            if (blCorrect) {
                 this.CorrectWeight += alpha * (1.0 - this.CorrectWeight); //EWMA
             } else {
                 this.CorrectWeight -= alpha * this.CorrectWeight; //EWMA

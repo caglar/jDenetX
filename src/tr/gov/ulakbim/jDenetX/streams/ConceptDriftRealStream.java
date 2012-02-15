@@ -151,13 +151,13 @@ public class ConceptDriftRealStream extends AbstractOptionHandler implements
         double x = -4.0 * (double) (numberInstanceStream - this.positionOption.getValue()) / (double) this.widthOption.getValue();
         double probabilityDrift = 1.0 / (1.0 + Math.exp(x));
         if (this.random.nextDouble() > probabilityDrift) {
-            if (this.inputStream.hasMoreInstances() == false) {
+            if (!this.inputStream.hasMoreInstances()) {
                 this.inputStream.restart();
             }
             this.inputInstance = this.inputStream.nextInstance();
             numclass = this.inputInstance.classValue();
         } else {
-            if (this.driftStream.hasMoreInstances() == false) {
+            if (!this.driftStream.hasMoreInstances()) {
                 this.driftStream.restart();
             }
             this.driftInstance = this.driftStream.nextInstance();

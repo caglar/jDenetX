@@ -120,7 +120,7 @@ public class HoeffdingAdaptiveTree extends HoeffdingTreeNBAdaptive {
 
         public double getErrorWidth() {
             double w = 0.0;
-            if (isNullError() == false) {
+            if (!isNullError()) {
                 w = this.estimationErrorWeight.getWidth();
             }
             return w;
@@ -154,22 +154,22 @@ public class HoeffdingAdaptiveTree extends HoeffdingTreeNBAdaptive {
                 this.estimationErrorWeight = new ADWIN();
             }
             double oldError = this.getErrorEstimation();
-            this.ErrorChange = this.estimationErrorWeight.setInput(blCorrect == true ? 0.0 : 1.0);
-            if (this.ErrorChange == true && oldError > this.getErrorEstimation()) {
+            this.ErrorChange = this.estimationErrorWeight.setInput(blCorrect ? 0.0 : 1.0);
+            if (this.ErrorChange  && oldError > this.getErrorEstimation()) {
                 //if error is decreasing, don't do anything
                 this.ErrorChange = false;
             }
 
             // Check condition to build a new alternate tree
             //if (this.isAlternateTree == false) {
-            if (this.ErrorChange == true) {//&& this.alternateTree == null) {
+            if (this.ErrorChange) {//&& this.alternateTree == null) {
                 //Start a new alternative tree : learning node
                 this.alternateTree = ht.newLearningNode();
                 //this.alternateTree.isAlternateTree = true;
                 ht.alternateTrees++;
             }
             // Check condition to replace tree
-            else if (this.alternateTree != null && ((NewNode) this.alternateTree).isNullError() == false) {
+            else if (!((NewNode) this.alternateTree).isNullError()) {
                 if (this.getErrorWidth() > 300 && ((NewNode) this.alternateTree).getErrorWidth() > 300) {
                     double oldErrorRate = this.getErrorEstimation();
                     double altErrorRate = ((NewNode) this.alternateTree).getErrorEstimation();
@@ -333,8 +333,8 @@ public class HoeffdingAdaptiveTree extends HoeffdingTreeNBAdaptive {
                 this.estimationErrorWeight = new ADWIN();
             }
             double oldError = this.getErrorEstimation();
-            this.ErrorChange = this.estimationErrorWeight.setInput(blCorrect == true ? 0.0 : 1.0);
-            if (this.ErrorChange == true && oldError > this.getErrorEstimation()) {
+            this.ErrorChange = this.estimationErrorWeight.setInput(blCorrect ? 0.0 : 1.0);
+            if (this.ErrorChange && oldError > this.getErrorEstimation()) {
                 this.ErrorChange = false;
             }
 

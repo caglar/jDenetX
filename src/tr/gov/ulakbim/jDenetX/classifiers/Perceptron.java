@@ -72,7 +72,7 @@ public class Perceptron extends AbstractClassifier {
     public void trainOnInstanceImpl(Instance inst) {
 
         //Init Perceptron
-        if (this.reset == true) {
+        if (this.reset) {
             this.reset = false;
             this.numberAttributes = inst.numAttributes();
             this.numberClasses = inst.numClasses();
@@ -133,7 +133,7 @@ public class Perceptron extends AbstractClassifier {
     @Override
     public double[] getVotesForInstance(Instance inst) {
         double[] votes = new double[inst.numClasses()];
-        if (this.reset == false) {
+        if (!this.reset) {
             for (int i = 0; i < votes.length; i++) {
                 votes[i] = prediction(inst, i);
             }

@@ -112,7 +112,7 @@ public class OzaBoostAdwin extends AbstractClassifier {
             this.initKm1 = false;
         }
         //Output Codes
-        if (this.initMatrixCodes == true) {
+        if (this.initMatrixCodes) {
 
             this.matrixCodes = new int[this.ensemble.length][inst.numClasses()];
             for (int i = 0; i < this.ensemble.length; i++) {
@@ -221,7 +221,7 @@ public class OzaBoostAdwin extends AbstractClassifier {
     public double[] getVotesForInstanceBinary(Instance inst) {
         double combinedVote[] = new double[(int) inst.numClasses()];
         Instance weightedInst = (Instance) inst.copy();
-        if (this.initMatrixCodes == false) {
+        if (this.initMatrixCodes) {
             for (int i = 0; i < this.ensemble.length; i++) {
                 //Replace class by OC
                 weightedInst.setClassValue((double) this.matrixCodes[i][(int) inst.classValue()]);

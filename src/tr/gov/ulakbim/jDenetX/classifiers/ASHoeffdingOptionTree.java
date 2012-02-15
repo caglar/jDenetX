@@ -80,7 +80,7 @@ public class ASHoeffdingOptionTree extends HoeffdingOptionTreeNBAdaptive {
 
                         while (this.decisionNodeCount >= this.maxSize
                                 && this.treeRoot instanceof SplitNode) {
-                            if (this.resetTree == false) {
+                            if (this.resetTree) {
                                 resizeTree(this.treeRoot,
                                         ((SplitNode) this.treeRoot)
                                                 .instanceChildIndex(inst));
