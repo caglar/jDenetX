@@ -102,7 +102,7 @@ public class UDPStreamReceiver {
         return packData;
     }
 
-    public String getPacketData() throws SocketException, IOException {
+    public String getPacketData() throws IOException {
         String packData = "";
         if (Sock == null) {
             throw new NullPointerException("getPacketData: Socket can not be null!");
