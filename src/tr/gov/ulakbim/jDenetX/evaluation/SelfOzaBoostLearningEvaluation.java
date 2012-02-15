@@ -3,6 +3,7 @@ package tr.gov.ulakbim.jDenetX.evaluation;
 import tr.gov.ulakbim.jDenetX.classifiers.Classifier;
 import tr.gov.ulakbim.jDenetX.core.Measurement;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,15 +31,9 @@ public class SelfOzaBoostLearningEvaluation {
     public SelfOzaBoostLearningEvaluation(Measurement[] evaluationMeasurements,
                               ClassificationPerformanceEvaluator cpe, Classifier model) {
         List<Measurement> measurementList = new LinkedList<Measurement>();
-        for (Measurement measurement : evaluationMeasurements) {
-            measurementList.add(measurement);
-        }
-        for (Measurement measurement : cpe.getPerformanceMeasurements()) {
-            measurementList.add(measurement);
-        }
-        for (Measurement measurement : model.getModelMeasurements()) {
-            measurementList.add(measurement);
-        }
+        Collections.addAll(measurementList, evaluationMeasurements);
+        Collections.addAll(measurementList, cpe.getPerformanceMeasurements());
+        Collections.addAll(measurementList, model.getModelMeasurements());
         this.measurements = measurementList
                 .toArray(new Measurement[measurementList.size()]);
     }

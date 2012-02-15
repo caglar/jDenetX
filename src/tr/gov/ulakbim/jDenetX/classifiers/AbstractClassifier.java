@@ -31,6 +31,7 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Utils;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -128,9 +129,7 @@ public abstract class AbstractClassifier extends AbstractOptionHandler
                 measureByteSize()));
         Measurement[] modelMeasurements = getModelMeasurementsImpl();
         if (modelMeasurements != null) {
-            for (Measurement measurement : modelMeasurements) {
-                measurementList.add(measurement);
-            }
+            Collections.addAll(measurementList, modelMeasurements);
         }
         // add average of sub-model measurements
         Classifier[] subModels = getSubClassifiers();
@@ -144,9 +143,7 @@ public abstract class AbstractClassifier extends AbstractOptionHandler
             Measurement[] avgMeasurements = Measurement
                     .averageMeasurements(subMeasurements
                             .toArray(new Measurement[subMeasurements.size()][]));
-            for (Measurement measurement : avgMeasurements) {
-                measurementList.add(measurement);
-            }
+            Collections.addAll(measurementList, avgMeasurements);
         }
         return measurementList.toArray(new Measurement[measurementList.size()]);
     }

@@ -8,6 +8,7 @@ import tr.gov.ulakbim.jDenetX.options.*;
 import weka.core.Instance;
 import weka.core.Utils;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -349,9 +350,7 @@ public class SelfOzaBoostASHOT extends SelfOzaBoost {
             measurementList.add(new Measurement("accuracyBaseLearner (percent)", 100 * this.accuracyBaseLearner / this.costLabeling));
             Measurement[] modelMeasurements = ((AbstractClassifier) this.classifier).getModelMeasurementsImpl();
             if (modelMeasurements != null) {
-                for (Measurement measurement : modelMeasurements) {
-                    measurementList.add(measurement);
-                }
+                Collections.addAll(measurementList, modelMeasurements);
             }
             return measurementList.toArray(new Measurement[measurementList.size()]);
         }
