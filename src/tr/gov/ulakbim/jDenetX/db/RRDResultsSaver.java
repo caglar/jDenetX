@@ -85,7 +85,7 @@ public class RRDResultsSaver {
             try {
                 rrdToolService.update(rrdFilename, arg);
             } catch (Exception e) {
-                e.printStackTrace(); //To change body of catch statement use File | Settings | File Templates.
+                e.printStackTrace();
             }
             sbcpe.reset();
             startTime = System.currentTimeMillis();

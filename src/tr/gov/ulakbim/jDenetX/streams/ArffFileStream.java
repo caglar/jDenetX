@@ -63,9 +63,7 @@ public class ArffFileStream extends AbstractOptionHandler implements
 
     protected InputStreamProgressMonitor fileProgressMonitor;
 
-    public ArffFileStream() {
-
-    }
+    public ArffFileStream() { }
 
     public ArffFileStream(String arffFileName, int classIndex) {
         this.arffFileOption.setValue(arffFileName);
@@ -154,7 +152,5 @@ public class ArffFileStream extends AbstractOptionHandler implements
 
     public void getDescription(StringBuilder sb, int indent) {
         // TODO Auto-generated method stub
-
     }
-
 }

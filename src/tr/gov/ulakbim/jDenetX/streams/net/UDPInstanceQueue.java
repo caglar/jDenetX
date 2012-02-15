@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- *
  * @author caglar
  */
 public class UDPInstanceQueue implements Queue {
@@ -51,16 +50,13 @@ public class UDPInstanceQueue implements Queue {
         int noOfAtts = Structure.numAttributes();
         DenseInstance inst = new DenseInstance(noOfAtts);
         inst.setDataset(Structure);
-
         String attrs[] = line.split(",");
         for (int i = 0; i < Structure.numAttributes(); i++) {
-            Attribute att = new Attribute(Structure.attribute(i).name(), Structure);
             if (i == (attrs.length - 1)) {
                 if (!inst.classIsMissing()) {
                     inst.setClassValue(attrs[i]);
                 }
             } else if (Structure.attribute(i).isNumeric()) {
-                //System.out.println(attrs[i]);
                 inst.setValue(Structure.attribute(i), Double.parseDouble(attrs[i]));
             } else if (Structure.attribute(i).isNominal()) {
                 inst.setValue(i, Double.parseDouble(attrs[i]));
@@ -70,7 +66,7 @@ public class UDPInstanceQueue implements Queue {
             inst.setClassMissing();
         }
         InstQueue.add(inst);
-        return ((line != null) && (Structure != null));
+        return ((line.length() > 1) && (Structure != null));
     }
 
     @Override
@@ -94,7 +90,7 @@ public class UDPInstanceQueue implements Queue {
         }
         inst.setClassMissing();
         InstQueue.add(inst);
-        return ((line != null) && (Structure != null));
+        return ((line.length() > 1) && (Structure != null));
     }
 
     @Override
