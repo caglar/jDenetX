@@ -38,49 +38,49 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
     private static final long serialVersionUID = 1586815404797353243L;
 
     //private static final int PoolSizeRatio = 10;
-    public ClassOption modelOption = new ClassOption("model", 'm',
+    private final ClassOption modelOption = new ClassOption("model", 'm',
             "Classifier to evaluate.", Classifier.class, "LearnClusterBaggingModel");
 
-    public ClassOption testStreamOption = new ClassOption("test_stream",
+    private final ClassOption testStreamOption = new ClassOption("test_stream",
             't',
             "test on a Stream to evaluate on.",
             InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption streamOption = new ClassOption("stream",
+    private final ClassOption streamOption = new ClassOption("stream",
             's',
             "Stream to evaluate on.",
             InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption evaluatorOption = new ClassOption("evaluator",
+    private final ClassOption evaluatorOption = new ClassOption("evaluator",
             'e',
             "Classification performance evaluation method.",
             ClassificationPerformanceEvaluator.class,
             "BasicClassificationPerformanceEvaluator");
 
-    public IntOption maxInstancesOption = new IntOption("maxInstances",
+    private final IntOption maxInstancesOption = new IntOption("maxInstances",
             'i',
             "Maximum number of instances to test.",
             1000000,
             0,
             Integer.MAX_VALUE);
 
-    public IntOption rrdStepSizeOption = new IntOption("stepSize",
+    private final IntOption rrdStepSizeOption = new IntOption("stepSize",
             'r',
             "Step size for the rrd files.",
             300,
             0,
             Integer.MAX_VALUE);
 
-    public FileOption rrdBaseDirOption = new FileOption("baseDir",
+    private final FileOption rrdBaseDirOption = new FileOption("baseDir",
             'b',
             "Base Directory to save the rrd files in",
             "/home/caglar/rrd_files/",
             "rrd",
             false);
 
-    public IntOption poolSizeOption = new IntOption("poolRatio",
+    private final IntOption poolSizeOption = new IntOption("poolRatio",
             'p',
             "Maximum amount ratio for pool size.",
             150,
@@ -107,7 +107,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         return LearningEvaluation.class;
     }
 
-    protected int selfTest(TaskMonitor monitor) {
+    int selfTest(TaskMonitor monitor) {
         int returnStatus = 1;
         Instance testInst = null;
         int maxInstances = this.maxInstancesOption.getValue();
@@ -175,7 +175,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         return returnStatus;
     }
 
-    protected void selfTrain(Instance testInst) {
+    void selfTrain(Instance testInst) {
         int maxInstances = this.maxInstancesOption.getValue();
         int poolSizeRatio = poolSizeOption.getValue();
         int poolLimit = maxInstances / poolSizeRatio;
@@ -277,7 +277,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         selfTrain(testInst);
         monitor.requestResume();
         int returnStatus = selfTest(monitor);
-        this.model.resetLearningImpl(); //Learning is completed so we can reset 
+        model.resetLearningImpl(); //Learning is completed so we can reset
         if (returnStatus == 0) {
             return null;
         }
@@ -333,7 +333,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         return ((Instances) sampled_data);
     }
 
-    public static Instances clusterInstances(Instances data) {
+    private static Instances clusterInstances(Instances data) {
         XMeans xmeans = new XMeans();
         Remove filter = new Remove();
         Instances dataClusterer = null;

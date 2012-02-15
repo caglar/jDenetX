@@ -17,7 +17,7 @@ import java.util.TreeSet;
  */
 public class DataPoint extends DenseInstance {
     protected int timestamp;
-    private HashMap<String, String> measure_values;
+    private final HashMap<String, String> measure_values;
 
     public DataPoint(Instance nextInstance, Integer timestamp) {
         super(nextInstance);

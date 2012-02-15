@@ -43,7 +43,7 @@ import weka.filters.unsupervised.attribute.Remove;
 
 import java.util.*;
 
-public class EvalActiveBoostingID {
+class EvalActiveBoostingID {
 
     public String getPurposeString() {
         return "Evaluates a Cotrain model on a stream.";
@@ -227,7 +227,7 @@ public class EvalActiveBoostingID {
         System.out.println("Accuracy result before self-train: " + evaluator.getPerformanceMeasurements()[1]);
         selfTrain(testInst);
         int returnStatus = selfTest(testStream);
-        this.model.resetLearningImpl(); //Learning is completed so we can reset
+        EvalActiveBoostingID.model.resetLearningImpl(); //Learning is completed so we can reset
         return new LearningEvaluation(evaluator.getPerformanceMeasurements());
     }
 

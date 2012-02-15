@@ -45,27 +45,27 @@ public class EvaluateActiveLearningModel extends MainTask {
     private static final long serialVersionUID = 1586815404797353243L;
 
     //private static final int PoolSizeRatio = 10;
-    public ClassOption modelOption = new ClassOption("model", 'm',
+    private final ClassOption modelOption = new ClassOption("model", 'm',
             "Classifier to evaluate.", Classifier.class, "LearnClusterBaggingModel");
 
-    public ClassOption testStreamOption = new ClassOption("test_stream",
+    private final ClassOption testStreamOption = new ClassOption("test_stream",
             't', "test on a Stream to evaluate on.", InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption streamOption = new ClassOption("stream", 's',
+    private final ClassOption streamOption = new ClassOption("stream", 's',
             "Stream to evaluate on.", InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    public ClassOption evaluatorOption = new ClassOption("evaluator", 'e',
+    private final ClassOption evaluatorOption = new ClassOption("evaluator", 'e',
             "Classification performance evaluation method.",
             ClassificationPerformanceEvaluator.class,
             "BasicClassificationPerformanceEvaluator");
 
-    public IntOption maxInstancesOption = new IntOption("maxInstances", 'i',
+    private final IntOption maxInstancesOption = new IntOption("maxInstances", 'i',
             "Maximum number of instances to test.", 1000000, 0,
             Integer.MAX_VALUE);
 
-    public IntOption poolSizeOption = new IntOption("poolRatio", 'p',
+    private final IntOption poolSizeOption = new IntOption("poolRatio", 'p',
             "Maximum amount ratio for pool size.", 1000, 0,
             Integer.MAX_VALUE);
 
@@ -88,7 +88,7 @@ public class EvaluateActiveLearningModel extends MainTask {
         return LearningEvaluation.class;
     }
 
-    protected int selfTest(TaskMonitor monitor) {
+    int selfTest(TaskMonitor monitor) {
         int returnStatus = 1;
         Instance testInst = null;
         int maxInstances = this.maxInstancesOption.getValue();
@@ -132,7 +132,7 @@ public class EvaluateActiveLearningModel extends MainTask {
         return returnStatus;
     }
 
-    protected void selfTrain(Instance testInst) {
+    void selfTrain(Instance testInst) {
         int maxInstances = this.maxInstancesOption.getValue();
         int poolSizeRatio = poolSizeOption.getValue();
         int poolLimit = maxInstances / poolSizeRatio;
@@ -224,7 +224,7 @@ public class EvaluateActiveLearningModel extends MainTask {
         selfTrain(testInst);
         monitor.requestResume();
         int returnStatus = selfTest(monitor);
-        this.model.resetLearningImpl(); //Learning is completed so we can reset 
+        model.resetLearningImpl(); //Learning is completed so we can reset
         if (returnStatus == 0) {
             return null;
         }
@@ -279,7 +279,7 @@ public class EvaluateActiveLearningModel extends MainTask {
         return ((Instances) sampled_data);
     }
 
-    public static Instances clusterInstances(Instances data) {
+    private static Instances clusterInstances(Instances data) {
         XMeans xmeans = new XMeans();
         Remove filter = new Remove();
         Instances dataClusterer = null;
@@ -524,7 +524,7 @@ public class EvaluateActiveLearningModel extends MainTask {
         }
     }
 
-    public static void testHoeffdingOptionNBAdaptive(int noOfInstances, int numAtts, int noClasses) {
+    private static void testHoeffdingOptionNBAdaptive(int noOfInstances, int numAtts, int noClasses) {
         System.out.println("HoeffdingOptionTreeNBAdaptive learning has been started");
 
         //RandomRBFGenerator trainStream = new RandomRBFGenerator();
