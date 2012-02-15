@@ -84,7 +84,7 @@ public class UDPStreamReceiver {
         return Sock.isBound();
     }
 
-    public String getPacketData(int portNo, int packetSize) throws SocketException, IOException {
+    public String getPacketData(int portNo, int packetSize) throws IOException {
         String packData = "";
         DatagramPacket packet = new DatagramPacket(new byte[packetSize], packetSize);
         if (Sock == null) {
