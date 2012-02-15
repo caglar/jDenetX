@@ -46,10 +46,7 @@ public class AuxiliaryFunctions {
      */
     public static void overwriteDoubleArray(double[] a1, double[] a2) {
         assert (a1.length == a2.length);
-
-        for (int i = 0; i < a1.length; i++) {
-            a1[i] = a2[i];
-        }
+        System.arraycopy(a2, 0, a1, 0, a1.length);
     }
 
     /**
@@ -61,10 +58,7 @@ public class AuxiliaryFunctions {
      */
     public static void overwriteIntegerArray(int[] a1, int[] a2) {
         assert (a1.length == a2.length);
-
-        for (int i = 0; i < a1.length; i++) {
-            a1[i] = a2[i];
-        }
+        System.arraycopy(a2, 0, a1, 0, a1.length);
     }
 
 

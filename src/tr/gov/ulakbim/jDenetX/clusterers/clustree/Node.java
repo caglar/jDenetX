@@ -293,10 +293,8 @@ public class Node {
         assert (pos1 < pos2);
 
         this.entries[pos1].mergeWith(this.entries[pos2]);
+        System.arraycopy(entries, 0, entries, 1, entries.length - 1);
 
-        for (int i = pos2; i < entries.length - 1; i++) {
-            entries[i] = entries[i + 1];
-        }
         entries[entries.length - 1].clear();
     }
 
