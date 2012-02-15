@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>
@@ -40,36 +39,38 @@ import javarrd.net.stamfest.rrd.RRDToolService;
 
 public class Test2 {
     public static void main(final String argv[]) throws Exception {
-	RRDCommandPool pool = new RRDCommandPool(20, ".", null);
-	pool.setMaxRequestsPerMember(100);
-	final RRD rrd = new RRDToolService(pool);
-	
-	
-	int total = 1000;
-	int threads = 6;
-	final int perthread = total  / threads;
-	
-	for (int t = 0 ; t < threads ; t++) {
-	    Thread th = new Thread() {
-		public void run() {
-		    System.err.println(System.currentTimeMillis());
-		    for (int i = 0 ; i < perthread ; i++) {
-			try {
-			    rrd.graphv(argv);
-			} catch (Exception e) {
-			    // TODO Auto-generated catch block
-			    e.printStackTrace();
-			}
-			
-			//for (String k : r.info.keySet()) {
-			// System.out.printf("%s=%s\n", k, r.info.get(k));
-			//}
-			System.out.println(i);
-		    }
-		    System.err.println(System.currentTimeMillis());
-		};
-	    };
-	    th.start();
-	}
+        RRDCommandPool pool = new RRDCommandPool(20, ".", null);
+        pool.setMaxRequestsPerMember(100);
+        final RRD rrd = new RRDToolService(pool);
+
+
+        int total = 1000;
+        int threads = 6;
+        final int perthread = total / threads;
+
+        for (int t = 0; t < threads; t++) {
+            Thread th = new Thread() {
+                public void run() {
+                    System.err.println(System.currentTimeMillis());
+                    for (int i = 0; i < perthread; i++) {
+                        try {
+                            rrd.graphv(argv);
+                        } catch (Exception e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                        //for (String k : r.info.keySet()) {
+                        // System.out.printf("%s=%s\n", k, r.info.get(k));
+                        //}
+                        System.out.println(i);
+                    }
+                    System.err.println(System.currentTimeMillis());
+                }
+
+                ;
+            };
+            th.start();
+        }
     }
 }

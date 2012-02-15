@@ -200,7 +200,6 @@ public class SelfOzaBoostID extends AbstractClassifier {
 
         if (confidenceVote.numValues() > 0) {
             confidenceVote.normalize();
-            //confidenceVote = new DoubleVector(Utils.logs2probs(confidenceVote.getArrayRef()));
             confidence = confidenceVote.maxValue();
         }
 

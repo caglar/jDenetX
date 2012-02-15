@@ -7,18 +7,19 @@ package tr.gov.ulakbim.jDenetX.classifiers;
  * Time: 1:58 PM
  * To change this template use File | Settings | File Templates.
  */
-import java.util.Random;
+
 import tr.gov.ulakbim.jDenetX.core.DoubleVector;
 import tr.gov.ulakbim.jDenetX.core.Measurement;
 import tr.gov.ulakbim.jDenetX.core.ObjectRepository;
 import tr.gov.ulakbim.jDenetX.options.ClassOption;
-import tr.gov.ulakbim.jDenetX.options.FlagOption;
 import tr.gov.ulakbim.jDenetX.options.FloatOption;
 import tr.gov.ulakbim.jDenetX.options.IntOption;
 import tr.gov.ulakbim.jDenetX.tasks.TaskMonitor;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Utils;
+
+import java.util.Random;
 
 /**
  * The Accuracy Weighted Ensemble classifier as proposed

@@ -4,7 +4,7 @@ import tr.gov.ulakbim.jDenetX.core.InputStreamProgressMonitor;
 import tr.gov.ulakbim.jDenetX.core.InstancesHeader;
 import tr.gov.ulakbim.jDenetX.core.ObjectRepository;
 import tr.gov.ulakbim.jDenetX.options.*;
-import tr.gov.ulakbim.jDenetX.streams.net.UDPDataReciever;
+import tr.gov.ulakbim.jDenetX.streams.net.UDPStreamReceiver;
 import tr.gov.ulakbim.jDenetX.tasks.TaskMonitor;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
@@ -28,7 +28,7 @@ import java.util.logging.Logger;
  */
 
 
-public class UDPFileStream extends AbstractOptionHandler implements
+public class UDPStream extends AbstractOptionHandler implements
         InstanceStream {
 
     @Override
@@ -102,12 +102,12 @@ public class UDPFileStream extends AbstractOptionHandler implements
 
     protected InputStreamProgressMonitor fileProgressMonitor;
 
-    protected UDPDataReciever uDataReceiver;
+    protected UDPStreamReceiver uStreamReceiver;
 
-    public UDPFileStream() {
+    public UDPStream() {
     }
 
-    public UDPFileStream(String arffFileName, int classIndex) {
+    public UDPStream(String arffFileName, int classIndex) {
         this.arffFileOption.setValue(arffFileName);
         this.classIndexOption.setValue(classIndex);
         restart();
@@ -141,7 +141,7 @@ public class UDPFileStream extends AbstractOptionHandler implements
 
     public boolean hasMoreInstances() {
         if (this.endOfStream) {
-            uDataReceiver.closeSocket();
+            uStreamReceiver.closeSocket();
         }
         return !this.endOfStream;
     }
@@ -161,9 +161,9 @@ public class UDPFileStream extends AbstractOptionHandler implements
             if (this.fileReader != null) {
                 this.fileReader.close();
             }
-            if (this.uDataReceiver != null) {
-                if (this.uDataReceiver.isSockBound()) {
-                    this.uDataReceiver.closeSocket();
+            if (this.uStreamReceiver != null) {
+                if (this.uStreamReceiver.isSockBound()) {
+                    this.uStreamReceiver.closeSocket();
                 }
             }
 
@@ -194,31 +194,31 @@ public class UDPFileStream extends AbstractOptionHandler implements
 
             this.numInstancesRead = 0;
             this.lastInstanceRead = null;
-            uDataReceiver = new UDPDataReciever(portOption.getValue(), packetSizeOption.getValue());
-            uDataReceiver.openSocket(socketTimeoutOption.getValue());
+            uStreamReceiver = new UDPStreamReceiver(portOption.getValue(), packetSizeOption.getValue());
+            uStreamReceiver.openSocket(socketTimeoutOption.getValue());
             if (checkHostOption.isSet()) {
                 if (hostOption.getValue() != null && hostOption.getValue().length() > 7) {
                     InetAddress address = InetAddress.getByName(hostOption.getValue());
-                    uDataReceiver.putHostConstraint(address);
+                    uStreamReceiver.putHostConstraint(address);
                 } else {
                     InetAddress address = InetAddress.getByName(hostOption.getValue());
-                    uDataReceiver.putHostConstraint(address);
+                    uStreamReceiver.putHostConstraint(address);
                 }
             }
             this.endOfStream = !recieveNextInstanceFromStream();
         } catch (IOException ioe) {
-            throw new RuntimeException("UDPFileStream restart failed.", ioe);
+            throw new RuntimeException("UDPStream restart failed.", ioe);
         }
     }
 
     protected boolean recieveNextInstanceFromStream() {
-        if (uDataReceiver == null) {
+        if (uStreamReceiver == null) {
             throw new NullPointerException("recieveNextInstanceFromStream: UDP Data Receiver object should not be empty");
         }
         if ((this.maxInstancesOption.getValue() == 0) || (this.numInstancesRead < maxInstancesOption.getValue())) {
-            if (uDataReceiver.isSockBound()) {
+            if (uStreamReceiver.isSockBound()) {
                 try {
-                    String message = uDataReceiver.getPacketData();
+                    String message = uStreamReceiver.getPacketData();
                     if (message != null && message.length() > 0) {
                         addInstance(message);
                     }
@@ -236,7 +236,7 @@ public class UDPFileStream extends AbstractOptionHandler implements
                 this.instances.delete(); // keep instances clean
                 this.numInstancesRead++;
             }
-            if (uDataReceiver.isSockBound()) {
+            if (uStreamReceiver.isSockBound()) {
                 return true;
             }
         }
@@ -275,7 +275,6 @@ public class UDPFileStream extends AbstractOptionHandler implements
         if (mess.length() == attList.size() + 1) {
             inst.setClassValue(tokens[attList.size()].trim());
         }
-        System.out.println(inst);
         insts.add(inst);
     }
 

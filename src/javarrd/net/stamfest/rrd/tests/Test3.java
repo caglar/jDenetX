@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>
@@ -33,19 +32,19 @@
 
 package javarrd.net.stamfest.rrd.tests;
 
-import java.util.Arrays;
-
 import javarrd.net.stamfest.rrd.CommandResult;
 import javarrd.net.stamfest.rrd.RRDCachedClient;
 
+import java.util.Arrays;
+
 public class Test3 {
     public static void main(String argv[]) throws Exception {
-	RRDCachedClient rrdc = new RRDCachedClient("localhost", 7622);
-	CommandResult r = rrdc.update(argv[0], 
-	                              Arrays.copyOfRange(argv, 1, 
-	                                                 argv.length));
+        RRDCachedClient rrdc = new RRDCachedClient("localhost", 7622);
+        CommandResult r = rrdc.update(argv[0],
+                Arrays.copyOfRange(argv, 1,
+                        argv.length));
 
-	System.out.println(r);
-	
+        System.out.println(r);
+
     }
 }

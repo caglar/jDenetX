@@ -29,8 +29,6 @@ public class StandardTaskMonitor implements TaskMonitor {
 
     protected volatile boolean pauseFlag = false;
 
-    protected volatile boolean isComplete = false;
-
     protected volatile boolean resultPreviewRequested = false;
 
     protected volatile Object latestResultPreview = null;

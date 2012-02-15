@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>
@@ -36,6 +35,6 @@ package javarrd.net.stamfest.rrd;
 public interface RRDUpdate {
 
     public CommandResult update(String filename, String args[])
-	throws Exception;
+            throws Exception;
 
 }

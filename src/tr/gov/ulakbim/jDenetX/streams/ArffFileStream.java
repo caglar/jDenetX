@@ -42,7 +42,8 @@ public class ArffFileStream extends AbstractOptionHandler implements
     private static final long serialVersionUID = 1L;
 
     public FileOption arffFileOption = new FileOption("arffFile", 'f',
-            "ARFF file to load.", null, "arff", false);
+            "ARFF file to load.",
+            null, "arff", false);
 
     public IntOption classIndexOption = new IntOption(
             "classIndex",

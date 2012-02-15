@@ -4,7 +4,6 @@ import tr.gov.ulakbim.jDenetX.classifiers.*;
 import tr.gov.ulakbim.jDenetX.classifiers.splits.InfoGainSplitCriterion;
 import tr.gov.ulakbim.jDenetX.evaluation.BasicClassificationPerformanceEvaluator;
 import tr.gov.ulakbim.jDenetX.evaluation.ClassificationPerformanceEvaluator;
-
 import tr.gov.ulakbim.jDenetX.evaluation.LearningEvaluation;
 import tr.gov.ulakbim.jDenetX.experiments.wrappers.EvalModel;
 import tr.gov.ulakbim.jDenetX.options.ClassOption;

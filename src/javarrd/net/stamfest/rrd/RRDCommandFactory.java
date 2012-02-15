@@ -1,4 +1,3 @@
-
 /*
 
  Copyright (c) 2010 by Peter Stamfest <peter@stamfest.at>
@@ -34,18 +33,15 @@
 package javarrd.net.stamfest.rrd;
 
 /**
- * 
  * @author peter
- *
- * Used by RRDpPool to have control about which kind of RRDp gets 
- * used by the pool.
- * 
+ *         <p/>
+ *         Used by RRDpPool to have control about which kind of RRDp gets
+ *         used by the pool.
  */
 public interface RRDCommandFactory {
     /**
-     * 
      * @return a new instance of RRDp
-     * @throws Exception 
+     * @throws Exception
      */
     public RRDCommand createRRDCommand() throws Exception;
 }

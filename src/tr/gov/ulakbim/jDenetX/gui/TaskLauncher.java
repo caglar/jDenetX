@@ -41,7 +41,7 @@ public class TaskLauncher extends JPanel {
 
     private static void createAndShowGUI() {
         // Create and set up the window.
-        JFrame frame = new JFrame("EMOA Task Launcher");
+        JFrame frame = new JFrame("jDenetX Task Launcher");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // Create and set up the content pane.
         JPanel panel = new TaskLauncher();
@@ -49,7 +49,8 @@ public class TaskLauncher extends JPanel {
         frame.setContentPane(panel);
         // Display the window.
         frame.pack();
-        frame.setSize(640, 480);
+        frame.setSize(800, 600);
+        frame.setLocationRelativeTo(null); //Center the window on the screen.
         frame.setVisible(true);
     }
 
