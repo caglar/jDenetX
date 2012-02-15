@@ -54,20 +54,14 @@ public class SingleClassifierDrift extends AbstractClassifier {
             return 0;
         }
 
-        ;
-
         //@Override
 
         public void getModelDescription(StringBuilder out, int indent) {
         }
 
-        ;
-
         public void getDescription(StringBuilder sb, int indent) {
             // TODO Auto-generated method stub
         }
-
-        ;
 
     }
 

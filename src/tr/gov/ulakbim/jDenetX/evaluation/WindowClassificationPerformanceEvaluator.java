@@ -81,8 +81,6 @@ public class WindowClassificationPerformanceEvaluator extends AbstractMOAObject
         reset(this.numClasses);
     }
 
-    ;
-
     public void reset(int numClasses) {
         this.numClasses = numClasses;
         this.rowKappa = new Estimator[numClasses];

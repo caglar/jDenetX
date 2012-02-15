@@ -48,7 +48,6 @@ public class TreeCoreset {
             this.rc = null;
             this.parent = parent;
             this.cost = treeNodeTargetFunctionValue();
-            ;
         }
 
         /**
@@ -132,8 +131,6 @@ public class TreeCoreset {
             return sum;
         }
     }
-
-    ;
 
     /**
      * computes the hypothetical cost if the node would be split with new centers centreA, centreB

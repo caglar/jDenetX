@@ -25,8 +25,6 @@ public class BucketManager {
 
     }
 
-    ;
-
     protected int numberOfBuckets;
     protected int maxBucketsize;
     protected Bucket[] buckets;

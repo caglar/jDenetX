@@ -152,10 +152,7 @@ public class RunVisualizer implements Runnable, ActionListener, ClusterEventList
 
 
     public void run() {
-        if (true)
-            runVisual();
-        else
-            runDebug();
+        runVisual();
     }
 
 

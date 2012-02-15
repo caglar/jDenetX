@@ -298,6 +298,4 @@ public abstract class AbstractClusterer extends AbstractOptionHandler
     public Clustering getMicroClusteringResult() {
         return null;
     }
-
-    ;
 }
