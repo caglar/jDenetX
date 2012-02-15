@@ -326,7 +326,7 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
         }
         int classesToClustersMap[] = eval.getClassesToClusters();
         for (int i = 0; i < classesToClustersMap.length; i++) {
-            if (assignments.equals(((Integer) classesToClustersMap[(int) data.get(i).classValue()]))) {
+            if (assignments.get(i).equals(((Integer) classesToClustersMap[(int) data.get(i).classValue()]))) {
                 ((Instances) sampled_data).add(data.get(i));
             }
         }
