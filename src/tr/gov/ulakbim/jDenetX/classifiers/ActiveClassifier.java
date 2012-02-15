@@ -115,9 +115,10 @@ public class ActiveClassifier extends AbstractClassifier {
 
     public double accuracyBaseLearner;
 
-    private double outPosterior;
+
 
     private double getMaxPosterior(double[] incomingPrediction) {
+        double outPosterior;
         if (incomingPrediction.length > 1) {
             DoubleVector vote = new DoubleVector(incomingPrediction);
             if (vote.sumOfValues() > 0.0) {
