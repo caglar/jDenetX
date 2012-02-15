@@ -237,7 +237,7 @@ public class EvaluateActiveBoostingModel extends MainTask {
             sKmeans.setOptions(options);
             sKmeans.buildClusterer(dataClusterer);
             System.out.println("Kmeans\n:" + sKmeans);
-            System.out.println(sKmeans.getAssignments());
+            System.out.println(Arrays.toString(sKmeans.getAssignments()));
             assignments = Arrays.asList(sKmeans.getAssignments());
         } catch (Exception e) {
             e.printStackTrace();
