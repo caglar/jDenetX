@@ -377,7 +377,6 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
             e.printStackTrace();
         }
 
-        //System.out.println("Assignments\n: " + assignments);
         ClusterEvaluation eval = new ClusterEvaluation();
         eval.setClusterer(xmeans);
         try {
