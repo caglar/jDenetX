@@ -123,7 +123,13 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
 
         while (testStream.hasMoreInstances()
                 && ((maxInstances < 0) || (instancesProcessed < maxInstances))) {
-            testInst = (Instance) testStream.nextInstance().copy();
+            
+            Instance nextInstance = testStream.nextInstance();
+            if (nextInstance == null) {
+                continue; //If no instance is received from the UDP connection
+            }
+
+            testInst = (Instance) nextInstance.copy();
             int trueClass = (int) testInst.classValue();
             testInst.setClassMissing();
             double[] prediction = model.getVotesForInstance(testInst);

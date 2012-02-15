@@ -181,6 +181,10 @@ public class UDPStreamReader implements Runnable {
                     if (message == null) {
                         System.out.println("Queue size" + m_UDPInstQueue.size());
                     }
+
+                    if (message == "END") {  // To end the socket connection
+                        m_UDPStreamReceiver.closeSocket();
+                    }
                 }
                 if (message != null && message.length() > 0) {
 //                    System.out.println("Message is: " + message);

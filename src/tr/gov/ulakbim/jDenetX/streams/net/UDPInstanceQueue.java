@@ -85,7 +85,12 @@ public class UDPInstanceQueue implements Queue {
         inst.setDataset(Structure);
         String attrs[] = line.split(",");
         for (int i = 0; i < Structure.numAttributes(); i++) {
-            inst.setValue(i, attrs[i]);
+            if (attrs[i].equals("?")) {
+                inst.setMissing(i);//Add the missing attribute
+            }
+            else {
+                inst.setValue(i, attrs[i]);
+            }
         }
         inst.setClassMissing();
         InstQueue.add(inst);

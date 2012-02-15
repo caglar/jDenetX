@@ -275,7 +275,6 @@ public class UDPStream extends AbstractOptionHandler implements
         if (mess.length() == attList.size() + 1) {
             inst.setClassValue(tokens[attList.size()].trim());
         }
-        System.out.println(inst);
         insts.add(inst);
     }
 
