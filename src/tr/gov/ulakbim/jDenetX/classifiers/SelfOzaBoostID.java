@@ -38,7 +38,7 @@ public class SelfOzaBoostID extends AbstractClassifier {
 
     public IntOption firstClassifierSizeOption = new IntOption(
             "firstClassifierSize", 'f',
-            "The size of first classifier in the bag. This option will have effect with only ASHoeffdingOptionTree", 60, 1, Integer.MAX_VALUE);
+            "The size of first classifier in the bag. This option will have effect with only ASHoeffdingOptionTree", 80, 1, Integer.MAX_VALUE);
 
     private static VotedInstancePool instConfPool = new VotedInstancePool();
 

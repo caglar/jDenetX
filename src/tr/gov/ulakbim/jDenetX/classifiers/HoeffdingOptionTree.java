@@ -55,7 +55,7 @@ public class HoeffdingOptionTree extends AbstractClassifier  {
                     "Greenwald-Khanna quantile summary with 100 tuples",
                     "Greenwald-Khanna quantile summary with 1000 tuples",
                     "VFML method with 10 bins", "VFML method with 100 bins",
-                    "VFML method with 1000 bins", "Exhaustive binary tree"}, 0);
+                    "VFML method with 1000 bins", "Exhaustive binary tree"}, 1);
 
     public IntOption memoryEstimatePeriodOption = new IntOption(
             "memoryEstimatePeriod", 'e',

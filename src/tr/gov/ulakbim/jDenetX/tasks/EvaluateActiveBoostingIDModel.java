@@ -38,49 +38,49 @@ public class EvaluateActiveBoostingIDModel extends MainTask {
     private static final long serialVersionUID = 1586815404797353243L;
 
     //private static final int PoolSizeRatio = 10;
-    private final ClassOption modelOption = new ClassOption("model", 'm',
+    public ClassOption modelOption = new ClassOption("model", 'm',
             "Classifier to evaluate.", Classifier.class, "LearnClusterBaggingModel");
 
-    private final ClassOption testStreamOption = new ClassOption("test_stream",
+    public ClassOption testStreamOption = new ClassOption("testStream",
             't',
-            "test on a Stream to evaluate on.",
+            "Test on a Stream to evaluate on.",
             InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    private final ClassOption streamOption = new ClassOption("stream",
+    public ClassOption streamOption = new ClassOption("stream",
             's',
             "Stream to evaluate on.",
             InstanceStream.class,
             "generators.RandomTreeGenerator");
 
-    private final ClassOption evaluatorOption = new ClassOption("evaluator",
+    public ClassOption evaluatorOption = new ClassOption("evaluator",
             'e',
             "Classification performance evaluation method.",
             ClassificationPerformanceEvaluator.class,
             "BasicClassificationPerformanceEvaluator");
 
-    private final IntOption maxInstancesOption = new IntOption("maxInstances",
+    public IntOption maxInstancesOption = new IntOption("maxInstances",
             'i',
             "Maximum number of instances to test.",
             1000000,
             0,
             Integer.MAX_VALUE);
 
-    private final IntOption rrdStepSizeOption = new IntOption("stepSize",
+    public IntOption rrdStepSizeOption = new IntOption("stepSize",
             'r',
             "Step size for the rrd files.",
             300,
             0,
             Integer.MAX_VALUE);
 
-    private final FileOption rrdBaseDirOption = new FileOption("baseDir",
+    public FileOption rrdBaseDirOption = new FileOption("baseDir",
             'b',
             "Base Directory to save the rrd files in",
             "/home/caglar/rrd_files/",
             "rrd",
             false);
 
-    private final IntOption poolSizeOption = new IntOption("poolRatio",
+    public IntOption poolSizeOption = new IntOption("poolRatio",
             'p',
             "Maximum amount ratio for pool size.",
             150,

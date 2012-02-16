@@ -44,7 +44,6 @@ public class BasicClassificationPerformanceEvaluator extends AbstractMOAObject
     private double SE = 0.0;
 
     private int NoOfProcessedInstances = 0;
-    //PrintWriter out = null;
 
     public void reset() {
         reset(this.numClasses);
